@@ -2,11 +2,13 @@
 #
 # Compound processing potential
 #
+# R code for the article:
+# Bioenergetic mapping of ‘healthy microbiomes’ via compound processing potential imprinted in gut and soil metagenomes
+#
+# by Craig Liddicoat, Robert A. Edwards, Michael Roach, Jake M. Robinson, Andrew D. Barnes, Joel Brame, Anna Heintz-Buschart, 
+# Timothy R. Cavagnaro, Elizabeth A. Dinsdale, Michael P. Doane, Nico Eisenhauer, Grace Mitchell, Bibishan Rai, Sunita Ramesh, 
+# Kiri J. Wallace, Martin F. Breed 
 #########################
-
-# translate functional tax_table to O:C and H:C "van Krevelen coordinates" - 
-# each sample has both presence data at coordinates, and abundance-weightings at coordinates
-
 
 # record library and version info
 .libPaths() # "/Library/Frameworks/R.framework/Versions/4.2/Resources/library"
@@ -17,11 +19,9 @@ citation()
 # R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL
 # https://www.R-project.org/.
 
-
 library(readxl); packageVersion("readxl") # '1.4.1'
 library(plyr); packageVersion("plyr") # '1.8.8'
 library(dplyr); packageVersion("dplyr") # '1.0.10'
-
 library(vegan);packageVersion("vegan") # '2.6.4'
 library(phyloseq); packageVersion("phyloseq") # '1.42.0'
 library(ggplot2); packageVersion("ggplot2") # '3.4.0'
@@ -31,59 +31,35 @@ library(tidyr); packageVersion("tidyr") # '1.2.1'
 library(corrr); packageVersion("corrr") # '0.4.4'
 library(ggforce); packageVersion("ggforce") # '0.4.1'
 library(ggrepel); packageVersion("ggrepel") # '0.9.2'
-
 library(stringdist); packageVersion("stringdist") # ‘0.9.10’
 library(stringr); packageVersion("stringr") # ‘1.5.0’
 library(doParallel); packageVersion("doParallel") # '1.0.17'
-
 library(zCompositions); packageVersion("zCompositions") # '1.4.0.1'
 #library(propr); packageVersion("propr") # '4.2.6'
-
 library(hexbin); packageVersion("hexbin") # '1.28.2'
 library(RColorBrewer); packageVersion("RColorBrewer") # '1.1.3'
-
 library(ggpp); packageVersion("ggpp") # ‘0.5.0’ # https://cran.r-project.org/web/packages/ggpp/vignettes/grammar-extensions.html
-
-library(corrplot)                  ;packageVersion("corrplot") #  '0.92'
-library(caret)                     ;packageVersion("caret") # '6.0.93'
-library(MASS)                     ;packageVersion("MASS") # ‘7.3.58.1’
+library(corrplot); packageVersion("corrplot") #  '0.92'
+library(caret); packageVersion("caret") # '6.0.93'
+library(MASS); packageVersion("MASS") # ‘7.3.58.1’
 library(ggsignif); packageVersion("ggsignif") # '0.6.4'
-library(moments)                  ;packageVersion("moments") # ‘0.14.1’
+library(moments); packageVersion("moments") # ‘0.14.1’
 library(ANCOMBC); packageVersion("ANCOMBC") # ‘2.0.1’
 library(grDevices); packageVersion("grDevices") #  '4.2.2'
 library(ggbiplot); packageVersion("ggbiplot") #  ‘0.55’
 library(viridis); packageVersion("viridis") #  ‘0.6.2’
-
 library(FSA); packageVersion("FSA") # '0.9.3'
 library(rcompanion); packageVersion("rcompanion") # '2.4.18'
-
-
 library(raster); packageVersion("raster") # '3.6.11' also loads package 'sp'
 #detach("package:raster", unload=TRUE)
 #unloadNamespace('raster')
-
 library(fields); packageVersion("fields") # ‘14.1’
 library(car); packageVersion("car") # ‘3.1.1’
 library(multcompView); packageVersion("multcompView") # ‘0.1.8’
-
 library(gtools); packageVersion("gtools") # ‘3.9.4’
 library(igraph); packageVersion("igraph") #  '1.4.2'
-
 library(pheatmap); packageVersion("pheatmap") # '1.0.12'
 library(colorspace); packageVersion("colorspace") # ‘2.1.0’
-
-#library(ggridges); packageVersion("ggridges") # '0.5.4'
-
-#library(gbm)                       ;packageVersion("gbm") #  '2.1.8'
-#library(glmnet)                    ;packageVersion("glmnet") #  '4.0.2'
-
-#library(gridExtra); packageVersion("gridExtra") # '2.3'
-#library(gplots); packageVersion("gplots") # '3.0.1'
-
-
-
-# line - 7900
-
 
 
 #########################
@@ -110,7 +86,6 @@ vkgrouprect$label <- factor(vkgrouprect$label)
 levels(vkgrouprect$label)
 # [1] "Amino sugar"         "Carbohydrate"        "Condensed aromatics" "Lignin"              "Lipid"               "Protein"            
 # [7] "Tannin"
-
 
 # vK coords for health-associated molecules
 df.vkcoords.refs <- read_excel(path = "/Users/lidd0026/WORKSPACE/PROJ/PCaN-NZ/nz-city-resto/modelling/R/oc-hc-ratios - v3c.xlsx",
@@ -264,10 +239,6 @@ p <- ggplot()+
   )
 p
 
-#grid.text(label = "(a)", x = unit(0.03, "npc") , y = unit(0.97,"npc"), gp=gpar(fontsize=13, fontface="bold") )
-#grid.text(label = "IGT cf. Normal (F) vk-coords", x = unit(0.07, "npc") , y = unit(0.96,"npc"), gp=gpar(fontsize=12), hjust=0 )
-#dev.print(tiff, file = paste0(workdir,"/plots/","vK-Ref-Figure-with-context-trends-v9.tiff"), width = 16, height = 12, units = "cm", res=450, compression="lzw",type="cairo")
-#dev.print(tiff, file = paste0(workdir,"/plots/","vK-Ref-Figure-with-context-trends-v9.tiff"), width = 20, height = 15, units = "cm", res=450, compression="lzw",type="cairo")
 dev.print(tiff, file = paste0(workdir,"/plots/","vK-Ref-Figure-with-context-trends-v9.tiff"), width = 20, height = 18, units = "cm", res=450, compression="lzw",type="cairo")
 
 
@@ -351,12 +322,7 @@ p <- ggplot()+
   )
 p
 
-#grid.text(label = "(a)", x = unit(0.03, "npc") , y = unit(0.97,"npc"), gp=gpar(fontsize=13, fontface="bold") )
-#grid.text(label = "IGT cf. Normal (F) vk-coords", x = unit(0.07, "npc") , y = unit(0.96,"npc"), gp=gpar(fontsize=12), hjust=0 )
-#dev.print(tiff, file = paste0(workdir,"/plots/","vK-Ref-Figure-with-context-trends-v9.tiff"), width = 16, height = 12, units = "cm", res=450, compression="lzw",type="cairo")
-#dev.print(tiff, file = paste0(workdir,"/plots/","vK-Ref-Figure-with-context-trends-v9.tiff"), width = 20, height = 15, units = "cm", res=450, compression="lzw",type="cairo")
 dev.print(tiff, file = paste0(workdir,"/plots/","vK-Ref-Figure-with-context-trends-v9c.tiff"), width = 20, height = 18, units = "cm", res=450, compression="lzw",type="cairo")
-
 
 
 #-------------------------
@@ -827,7 +793,6 @@ p
 
 
 grid.text(label = "(b)", x = unit(0.04, "npc") , y = unit(0.97,"npc"), gp=gpar(fontsize=13, fontface="bold") )
-#grid.text(label = "Disturbed", x = unit(0.13, "npc") , y = unit(0.96,"npc"), gp=gpar(fontsize=12) )
 dev.print(tiff, file = paste0(workdir,"/plots/","All-compounds-vK-space-scatterheatmap--v9d-viridis.tiff"), width = 16, height = 12, units = "cm", res=450, compression="lzw",type="cairo")
 #dev.print(tiff, file = paste0(workdir,"/plots/","All-compounds-vK-space-scatterheatmap--v8-dark.tiff"), width = 16, height = 12, units = "cm", res=450, compression="lzw",type="cairo")
 
@@ -887,7 +852,6 @@ p
 
 
 grid.text(label = "(a)", x = unit(0.04, "npc") , y = unit(0.97,"npc"), gp=gpar(fontsize=13, fontface="bold") )
-#grid.text(label = "Natural", x = unit(0.12, "npc") , y = unit(0.96,"npc"), gp=gpar(fontsize=12) )
 dev.print(tiff, file = paste0(workdir,"/plots/","All-compounds-vK-space-scatterheatmap-WIDEextent--v9d-viridis.tiff"), width = 16, height = 12, units = "cm", res=450, compression="lzw",type="cairo")
 #dev.print(tiff, file = paste0(workdir,"/plots/","All-compounds-vK-space-scatterheatmap-WIDEextent--v8-dark.tiff"), width = 16, height = 12, units = "cm", res=450, compression="lzw",type="cairo")
 
@@ -2505,8 +2469,6 @@ geom_segment(aes(x = 1.1, y = 2.4, xend = 1.1,  yend = 3), inherit.aes = FALSE ,
   )
 p
 
-#grid.text(label = "(a)", x = unit(0.04, "npc") , y = unit(0.97,"npc"), gp=gpar(fontsize=13, fontface="bold") )
-#grid.text(label = "PCaN restoration", x = unit(0.28, "npc") , y = unit(0.95,"npc"), gp=gpar(fontsize=11) )
 grid.text(label = "PCaN restoration soils", x = unit(0.12, "npc") , y = unit(0.95,"npc"), gp=gpar(fontsize=11), hjust=0 )
 dev.print(tiff, file = paste0(workdir,"/plots/","Data-distribution-vK-space-scatterheatmap",this_study,"--v9.tiff"), width = 10, height = 10, units = "cm", res=450, compression="lzw",type="cairo")
 
