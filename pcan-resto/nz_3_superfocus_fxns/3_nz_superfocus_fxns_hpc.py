@@ -60,8 +60,7 @@ for i in range(n):
     #mkdir_p(OUTDIR)  # this output directory will be made by superfocus
 
     path_to_db_dir = "/home/lidd0026/miniconda3/lib/python3.8/site-packages/superfocus_app"
-
-    #path_to_diamond_db_dir = "/home/lidd0026/miniconda3/lib/python3.8/site-packages/superfocus_app/db/static/diamond/"
+    
     # 100_clusters.db.dmnd
 
     temp_directory = "%s/%s" % (TEMP_DIR_START, samples[i])
