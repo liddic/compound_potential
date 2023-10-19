@@ -50,7 +50,9 @@ $ find -type f -name '*_R1.single.fastq' -delete
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
-This runs the python script *[ami_3_superfocus_fxns_hpc.py](ami_3_superfocus_fxns/ami_3_superfocus_fxns_hpc.py)*
+This runs the python script *[ami_3_superfocus_fxns_hpc.py](ami_3_superfocus_fxns/ami_3_superfocus_fxns_hpc.py)*.
+
+The python script writes and submits a separate SLURM submission file for each sample, with all files copied to [job_files](ami_3_superfocus_fxns/job_files)
 
 ```Shell
 cd $WORKING_DIRECTORY/ami_3_superfocus_fxns
