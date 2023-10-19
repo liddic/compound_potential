@@ -1,13 +1,13 @@
 ## Workflow on DeepThought HPC - AMI case study
 
 Notes:
-- $WORKING_DIRECTORY and $LOCAL_WORKING_DIRECTORY should be swapped for an appropriate folder paths
+- $WORKING_DIRECTORY and $LOCAL_WORKING_DIRECTORY should be substituted for appropriate folder paths
 - [DeepThought HPC](https://deepthoughtdocs.flinders.edu.au/en/latest/) uses [SLURM](https://deepthoughtdocs.flinders.edu.au/en/latest/SLURM/SLURMIntro.html) job submission/queuing/management software
 
 
 **Step 1. Download raw fastq files**
 
-This runs python script *ami_1_meta_download_hpc.py*
+This runs the python script *[ami_1_meta_download_hpc.py](ami/ami_1_meta_raw_fastq/ami_1_meta_download_hpc.py)*
 
 ```Shell
 cd $WORKING_DIRECTORY/ami_1_meta_raw_fastq
@@ -25,7 +25,7 @@ sbatch ami_2_fastqc_inspect_eg.sh
 
 Now perform [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
 
-AMI fastq files have two formats _R1.fastq/_R2.fastq and _R1_001.fastq/_R1_002.fastq 
+AMI fastq files have two formats, so snakefiles were developed for each format - [_R1.fastq/_R2.fastq](ami/ami_2_fastp_qc/ami_2_fastp_hpc.snakefile) and [_R1_001.fastq/_R2_001.fastq](ami/ami_2_fastp_qc/ami_2_fastp_hpc_001files.snakefile) 
 
 ```Shell 
 cd $WORKING_DIRECTORY/ami_2_fastp_qc
@@ -50,7 +50,7 @@ $ find -type f -name '*_R1.single.fastq' -delete
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
-This runs python script *ami_3_superfocus_fxns_hpc.py*
+This runs the python script *[ami_3_superfocus_fxns_hpc.py](ami/ami_3_superfocus_fxns/ami_3_superfocus_fxns_hpc.py)*
 
 ```Shell
 cd $WORKING_DIRECTORY/ami_3_superfocus_fxns
