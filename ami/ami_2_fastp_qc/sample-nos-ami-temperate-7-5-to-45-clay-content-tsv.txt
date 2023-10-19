@@ -1,0 +1,85 @@
+Sample_ID	Env_Broad_Scale	Env_Local_Scale	samp_no
+102.100.100/12465	1 Conservation and Natural Environments	1.1.3 National park	12465
+102.100.100/12469	1 Conservation and Natural Environments	1.1.3 National park	12469
+102.100.100/12471	1 Conservation and Natural Environments	1.1.3 National park	12471
+102.100.100/12473	1 Conservation and Natural Environments	1.1.3 National park	12473
+102.100.100/12475	1 Conservation and Natural Environments	1.1.3 National park	12475
+102.100.100/12477	1 Conservation and Natural Environments	1.1.3 National park	12477
+102.100.100/12479	1 Conservation and Natural Environments	1.1.3 National park	12479
+102.100.100/12491	1 Conservation and Natural Environments	1.1.3 National park	12491
+102.100.100/12493	1 Conservation and Natural Environments	1.1.3 National park	12493
+102.100.100/12495	1 Conservation and Natural Environments	1.1.3 National park	12495
+102.100.100/12497	1 Conservation and Natural Environments	1.1.3 National park	12497
+102.100.100/12501	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12501
+102.100.100/12503	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12503
+102.100.100/12505	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12505
+102.100.100/12507	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12507
+102.100.100/12509	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12509
+102.100.100/12511	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12511
+102.100.100/12513	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12513
+102.100.100/12515	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12515
+102.100.100/12517	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12517
+102.100.100/12519	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12519
+102.100.100/12521	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12521
+102.100.100/12523	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12523
+102.100.100/12525	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12525
+102.100.100/12527	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	12527
+102.100.100/12560	1 Conservation and Natural Environments	1.1.3 National park	12560
+102.100.100/12562	1 Conservation and Natural Environments	1.1.3 National park	12562
+102.100.100/12564	1 Conservation and Natural Environments	1.1.3 National park	12564
+102.100.100/12566	1 Conservation and Natural Environments	1.1.3 National park	12566
+102.100.100/12568	1 Conservation and Natural Environments	1.1.3 National park	12568
+102.100.100/12570	1 Conservation and Natural Environments	1.1.3 National park	12570
+102.100.100/12572	1 Conservation and Natural Environments	1.1.3 National park	12572
+102.100.100/12574	1 Conservation and Natural Environments	1.1.3 National park	12574
+102.100.100/12576	1 Conservation and Natural Environments	1.1.3 National park	12576
+102.100.100/12578	1 Conservation and Natural Environments	1.1.3 National park	12578
+102.100.100/12580	1 Conservation and Natural Environments	1.1.3 National park	12580
+102.100.100/12582	1 Conservation and Natural Environments	1.1.3 National park	12582
+102.100.100/12590	3 Production from Dryland Agriculture and Plantations	3.4.4 Vine fruits	12590
+102.100.100/12614	3 Production from Dryland Agriculture and Plantations	3.4.1 Tree fruits	12614
+102.100.100/12616	3 Production from Dryland Agriculture and Plantations	3.4.1 Tree fruits	12616
+102.100.100/12618	3 Production from Dryland Agriculture and Plantations	3.4.1 Tree fruits	12618
+102.100.100/12620	3 Production from Dryland Agriculture and Plantations	3.4.1 Tree fruits	12620
+102.100.100/12622	3 Production from Dryland Agriculture and Plantations	3.4.1 Tree fruits	12622
+102.100.100/12624	3 Production from Dryland Agriculture and Plantations	3.4.1 Tree fruits	12624
+102.100.100/13260	4 Production from Irrigated Agriculture and Plantations	4.5 Irrigated seasonal horticulture	13260
+102.100.100/13274	3 Production from Dryland Agriculture and Plantations	4.2.3 Irrigated legume/grass mixtures	13274
+102.100.100/13278	3 Production from Dryland Agriculture and Plantations	4.2.3 Irrigated legume/grass mixtures	13278
+102.100.100/13729	1 Conservation and Natural Environments	1.1 Nature conservation	13729
+102.100.100/13731	1 Conservation and Natural Environments	1.1 Nature conservation	13731
+102.100.100/13733	1 Conservation and Natural Environments	1.1 Nature conservation	13733
+102.100.100/13735	1 Conservation and Natural Environments	1.1 Nature conservation	13735
+102.100.100/13906	1 Conservation and Natural Environments	1.1.3 National park	13906
+102.100.100/19471	1 Conservation and Natural Environments	6.5.1 Marsh/wetland conservation	19471
+102.100.100/7845	1 Conservation and Natural Environments	1.1.3 National park	7845
+102.100.100/7861	1 Conservation and Natural Environments	1.1.3 National park	7861
+102.100.100/7863	1 Conservation and Natural Environments	1.1.3 National park	7863
+102.100.100/7888	1 Conservation and Natural Environments	1.1.3 National park	7888
+102.100.100/7890	3 Production from Dryland Agriculture and Plantations	3.3.1 Cereals	7890
+102.100.100/7900	3 Production from Dryland Agriculture and Plantations	4.2.3 Irrigated legume/grass mixtures	7900
+102.100.100/7902	3 Production from Dryland Agriculture and Plantations	3.3.1 Cereals	7902
+102.100.100/8076	1 Conservation and Natural Environments	1.1.3 National park	8076
+102.100.100/8078	1 Conservation and Natural Environments	1.1.3 National park	8078
+102.100.100/8084	1 Conservation and Natural Environments	1.1.3 National park	8084
+102.100.100/8088	1 Conservation and Natural Environments	1.1.3 National park	8088
+102.100.100/8126	1 Conservation and Natural Environments	1.1.3 National park	8126
+102.100.100/8138	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	8138
+102.100.100/8140	3 Production from Dryland Agriculture and Plantations	3.3.6 Cotton	8140
+102.100.100/8142	1 Conservation and Natural Environments	1.1.3 National park	8142
+102.100.100/8144	1 Conservation and Natural Environments	1.1.3 National park	8144
+102.100.100/8146	1 Conservation and Natural Environments	1.1.3 National park	8146
+102.100.100/8150	1 Conservation and Natural Environments	1.1.3 National park	8150
+102.100.100/8152	1 Conservation and Natural Environments	1.1.3 National park	8152
+102.100.100/9430	1 Conservation and Natural Environments	1.1.3 National park	9430
+102.100.100/9434	1 Conservation and Natural Environments	1.1.3 National park	9434
+102.100.100/9436	1 Conservation and Natural Environments	1.1.3 National park	9436
+102.100.100/9438	1 Conservation and Natural Environments	1.1.3 National park	9438
+102.100.100/9440	1 Conservation and Natural Environments	1.1.3 National park	9440
+102.100.100/9442	1 Conservation and Natural Environments	1.1.3 National park	9442
+102.100.100/9446	1 Conservation and Natural Environments	1.1.3 National park	9446
+102.100.100/9458	1 Conservation and Natural Environments	1.1.3 National park	9458
+102.100.100/9462	1 Conservation and Natural Environments	1.1.3 National park	9462
+102.100.100/9464	1 Conservation and Natural Environments	1.1.3 National park	9464
+102.100.100/9466	1 Conservation and Natural Environments	1.1.3 National park	9466
+102.100.100/9468	1 Conservation and Natural Environments	1.1.3 National park	9468
