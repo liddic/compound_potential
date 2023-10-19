@@ -1,6 +1,8 @@
-## Workflow on DeepThought HPC
+## Workflow on DeepThought HPC - AMI case study
 
-Note $WORKING_DIRECTORY should be swapped for appropriate working folder
+Notes:
+- $WORKING_DIRECTORY should be swapped for appropriate working folder
+- [DeepThought HPC](https://deepthoughtdocs.flinders.edu.au/en/latest/) uses [SLURM](https://deepthoughtdocs.flinders.edu.au/en/latest/SLURM/SLURMIntro.html) job submission/ queuing/ management software
 
 **Step 1. Download raw fastq files**
 
@@ -13,12 +15,12 @@ sbatch run_ami_1_meta_download_hpc.sh
 
 **Step 2. Perform QA/QC**
 
-#check fastqc reports for example raw sequence files
+Run [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for example raw sequence files
 
-
-$ cd /scratch/user/lidd0026/ami_1_meta_raw_fastq/fastqc_reports
+```Shell
+$ cd $WORKING_DIRECTORY/ami_1_meta_raw_fastq/fastqc_reports
 $ sbatch ami_2_fastqc_inspect_eg.sh
-
+```
 
 $ cd /scratch/user/lidd0026/ami_1_meta_raw_fastq/
 $ find -name "*_R1.fastq.gz" | wc -l # qty 129
