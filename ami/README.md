@@ -25,7 +25,7 @@ sbatch ami_2_fastqc_inspect_eg.sh
 
 Now perform [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
 
-AMI fastq files have two formats, so snakefiles were developed for each format - [_R1.fastq/_R2.fastq](ami/ami_2_fastp_qc/ami_2_fastp_hpc.snakefile) and [_R1_001.fastq/_R2_001.fastq](ami/ami_2_fastp_qc/ami_2_fastp_hpc_001files.snakefile) 
+AMI fastq files have two formats, so snakefiles were developed for each format - [_R1.fastq/_R2.fastq](ami_2_fastp_qc/ami_2_fastp_hpc.snakefile) and [_R1_001.fastq/_R2_001.fastq](ami_2_fastp_qc/ami_2_fastp_hpc_001files.snakefile) 
 
 ```Shell 
 cd $WORKING_DIRECTORY/ami_2_fastp_qc
