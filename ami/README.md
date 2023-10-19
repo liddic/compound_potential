@@ -33,7 +33,9 @@ nohup snakemake -s ami_2_fastp_hpc.snakefile --cluster 'sbatch --mem=32g --cpus-
 nohup snakemake -s ami_2_fastp_hpc_001files.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 34 --latency-wait 60 & exit
 ```
 
-Log back into the HPC. [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) only uses good R1 files, so cleanup files not used
+Log back into the HPC.
+
+[SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) only uses good R1 files, so cleanup files not used
 ```Shell
 cd $WORKING_DIRECTORY/ami_2_fastp_qc
 $ find -type f -name '*_R2.good.fastq'
