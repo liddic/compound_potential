@@ -7,7 +7,7 @@ Notes:
 
 **Step 1. Download raw fastq files**
 
-This runs the python script *[ami_1_meta_download_hpc.py](ami/ami_1_meta_raw_fastq/ami_1_meta_download_hpc.py)*
+This runs the python script *[ami_1_meta_download_hpc.py](ami_1_meta_raw_fastq/ami_1_meta_download_hpc.py)*
 
 ```Shell
 cd $WORKING_DIRECTORY/ami_1_meta_raw_fastq
@@ -50,7 +50,7 @@ $ find -type f -name '*_R1.single.fastq' -delete
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
-This runs the python script *[ami_3_superfocus_fxns_hpc.py](ami/ami_3_superfocus_fxns/ami_3_superfocus_fxns_hpc.py)*
+This runs the python script *[ami_3_superfocus_fxns_hpc.py](ami_3_superfocus_fxns/ami_3_superfocus_fxns_hpc.py)*
 
 ```Shell
 cd $WORKING_DIRECTORY/ami_3_superfocus_fxns
