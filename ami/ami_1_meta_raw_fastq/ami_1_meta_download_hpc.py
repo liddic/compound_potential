@@ -36,8 +36,6 @@ with open( "urls_to_metagenome_data_7_5_to_45_clay_temperate-USETHIS.txt" , "r" 
 # read in list of md5checksums
 with open( "md5sums_for_metagenome_data_7_5_to_45_clay_temperate-USETHIS.txt" , "r" ) as f:
     md5Sums = f.readlines()
-print( md5Sums[0] )
-len(md5Sums) # 614
 
 
 
