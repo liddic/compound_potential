@@ -1,7 +1,7 @@
 ## Workflow on DeepThought HPC - AMI case study
 
 Notes:
-- $WORKING_DIRECTORY should be swapped for an appropriate folder path
+- $WORKING_DIRECTORY and $LOCAL_WORKING_DIRECTORY should be swapped for an appropriate folder paths
 - [DeepThought HPC](https://deepthoughtdocs.flinders.edu.au/en/latest/) uses [SLURM](https://deepthoughtdocs.flinders.edu.au/en/latest/SLURM/SLURMIntro.html) job submission/queuing/management software
 
 
