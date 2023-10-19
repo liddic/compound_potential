@@ -1,8 +1,8 @@
 ## Workflow on DeepThought HPC - AMI case study
 
 Notes:
-- $WORKING_DIRECTORY should be swapped for appropriate working folder
-- [DeepThought HPC](https://deepthoughtdocs.flinders.edu.au/en/latest/) uses [SLURM](https://deepthoughtdocs.flinders.edu.au/en/latest/SLURM/SLURMIntro.html) job submission/ queuing/ management software
+- $WORKING_DIRECTORY should be swapped for an appropriate folder path
+- [DeepThought HPC](https://deepthoughtdocs.flinders.edu.au/en/latest/) uses [SLURM](https://deepthoughtdocs.flinders.edu.au/en/latest/SLURM/SLURMIntro.html) job submission/queuing/management software
 
 **Step 1. Download raw fastq files**
 
@@ -15,42 +15,26 @@ sbatch run_ami_1_meta_download_hpc.sh
 
 **Step 2. Perform QA/QC**
 
-Run [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for example raw sequence files
+Run [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for select example raw sequence files
 
 ```Shell
-$ cd $WORKING_DIRECTORY/ami_1_meta_raw_fastq/fastqc_reports
-$ sbatch ami_2_fastqc_inspect_eg.sh
+cd $WORKING_DIRECTORY/ami_1_meta_raw_fastq/fastqc_reports
+sbatch ami_2_fastqc_inspect_eg.sh
 ```
 
-$ cd /scratch/user/lidd0026/ami_1_meta_raw_fastq/
-$ find -name "*_R1.fastq.gz" | wc -l # qty 129
-$ find -name "*_R1_001.fastq.gz" | wc -l # qty 34
+Now perform [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/)
+AMI fastq files have two formats _R1.fastq/_R2.fastq and _R1_001.fastq/_R1_002.fastq 
 
-79 total soil metagenomes. qty with _001 = 17
+```Shell 
+cd $WORKING_DIRECTORY/ami_2_fastp_qc
+nohup snakemake -s ami_2_fastp_hpc.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 129 --latency-wait 60 & exit
 
-# navigate to - /scratch/user/lidd0026/ami_2_fastp_qc
-$ cd /scratch/user/lidd0026/ami_2_fastp_qc
+nohup snakemake -s ami_2_fastp_hpc_001files.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 34 --latency-wait 60 & exit
+```
 
-# sbatch option here - https://slurm.schedmd.com/sbatch.html 
-$ scontrol show config
-# --mem = Specify the real memory required per node 
-
-## DeepThought
-$ nohup snakemake -s ami_2_fastp_hpc.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 129 --latency-wait 60 & exit
-
-$ nohup snakemake -s ami_2_fastp_hpc_001files.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 34 --latency-wait 60 & exit
-
-# logged back into deepthought and check squeue
-
-# sbatch run_ami_2_fastp_hpc-19471-only.sh
-
-squeue -u lidd0026 | wc -l
-
-
-cd /scratch/user/lidd0026/ami_2_fastp_qc
-
-# clean up files not used by Superfocus
-
+Log back into the HPC. SUPER-FOCUS only uses good R1 files, so cleanup files not used
+```Shell
+cd $WORKING_DIRECTORY/ami_2_fastp_qc
 $ find -type f -name '*_R2.good.fastq'
 $ find -type f -name '*_R2.good.fastq' -delete
 
@@ -59,24 +43,24 @@ $ find -type f -name '*_R2.single.fastq' -delete
 
 $ find -type f -name '*_R1.single.fastq'
 $ find -type f -name '*_R1.single.fastq' -delete
+```
+
+**Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation
 
 
-#### 3 - Superfocus functional annotation
-
-$ cd /scratch/user/lidd0026/ami_3_superfocus_fxns
-
-$ sbatch run_ami_3_superfocus_fxns_hpc.sh
-
-# sbatch job_files/submission_superfocus_19471.sh
-
-squeue -u lidd0026 | wc -l
-
-#list sub-folders with superfocus outputs for each sample
+```Shell
+cd $WORKING_DIRECTORY/ami_3_superfocus_fxns
+sbatch run_ami_3_superfocus_fxns_hpc.sh
+```
+list sub-folders with superfocus outputs for each sample and copy to text file
+```Shell
 ls -d */
-
-# copy list of sub-folders to text file
-# then in local Mac terminal:
-cd /Users/lidd0026/WORKSPACE/PROJ/Gut-and-soil/modelling/DT/ami
+```
+Then on local machine create corresponding results folders
+```Shell
+cd $LOCAL_WORKING_DIRECTORY/ami
 xargs mkdir <ami-superfocus-folder-list.txt
+```
 
-# download 'output_all_levels_and_function.xls' from DT to Mac
+Now using FileZilla FTP, download all 'output_all_levels_and_function.xls' results files for each sequence from HPC to Local machine
+Proceed with data analysis in R
