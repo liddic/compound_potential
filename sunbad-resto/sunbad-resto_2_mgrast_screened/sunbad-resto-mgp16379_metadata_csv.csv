@@ -1,0 +1,16 @@
+﻿sample_name,mgrast_id,metagenome_id,metagenome_name,investigation_type,seq_meth,file_name
+10A,mgl422984,mgm4679669.3,10A.fastq,metagenome,pyrosequencing,10A.fastq
+10B,mgl422987,mgm4679662.3,10B.fastq,metagenome,pyrosequencing,10B.fastq
+10C,mgl422990,mgm4679664.3,10C.fastq,metagenome,pyrosequencing,10C.fastq
+20A,mgl422993,mgm4679665.3,20A.fastq,metagenome,pyrosequencing,20A.fastq
+20B,mgl422996,mgm4679666.3,20B.fastq,metagenome,pyrosequencing,20B.fastq
+20C,mgl422999,mgm4679658.3,20C.fastq,metagenome,pyrosequencing,20C.fastq
+30A,mgl423002,mgm4679660.3,30A.fastq,metagenome,pyrosequencing,30A.fastq
+30B,mgl423005,mgm4679659.3,30B.fastq,metagenome,pyrosequencing,30B.fastq
+30C,mgl423008,mgm4679672.3,30C.fastq,metagenome,pyrosequencing,30C.fastq
+5A,mgl422975,mgm4679663.3,5A.fastq,metagenome,pyrosequencing,5A.fastq
+5B,mgl422978,mgm4679667.3,5B.fastq,metagenome,pyrosequencing,5B.fastq
+5C,mgl422981,mgm4679670.3,5C.fastq,metagenome,pyrosequencing,5C.fastq
+UMA,mgl423011,mgm4679661.3,UMA.fastq,metagenome,pyrosequencing,UMA.fastq
+UMB,mgl423014,mgm4679668.3,UMB.fastq,metagenome,pyrosequencing,UMB.fastq
+UMC,mgl423017,mgm4679671.3,UMC.fastq,metagenome,pyrosequencing,UMC.fastq
