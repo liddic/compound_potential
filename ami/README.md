@@ -4,6 +4,7 @@ Notes:
 - $WORKING_DIRECTORY and $LOCAL_WORKING_DIRECTORY should be substituted for appropriate folder paths
 - [DeepThought HPC](https://deepthoughtdocs.flinders.edu.au/en/latest/) uses [SLURM](https://deepthoughtdocs.flinders.edu.au/en/latest/SLURM/SLURMIntro.html) job submission/queuing/management software
 
+&nbsp;
 
 **Step 1. Download raw fastq files**
 
@@ -13,6 +14,8 @@ This runs the python script *[ami_1_meta_download_hpc.py](ami_1_meta_raw_fastq/a
 cd $WORKING_DIRECTORY/ami_1_meta_raw_fastq
 sbatch run_ami_1_meta_download_hpc.sh
 ```
+
+&nbsp;
 
 **Step 2. Perform QA/QC**
 
@@ -47,6 +50,8 @@ $ find -type f -name '*_R2.single.fastq' -delete
 $ find -type f -name '*_R1.single.fastq'
 $ find -type f -name '*_R1.single.fastq' -delete
 ```
+
+&nbsp;
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
