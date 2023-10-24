@@ -1,4 +1,4 @@
-## Workflow on DeepThought HPC - Post-mining forest restoration case study, from Sun & Badgley 2019
+## Workflow on DeepThought HPC - Post-mining forest restoration case study, using data from Sun & Badgley 2019
 
 Notes:
 - $WORKING_DIRECTORY and $LOCAL_WORKING_DIRECTORY should be substituted for appropriate folder paths
