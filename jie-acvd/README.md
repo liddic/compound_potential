@@ -8,7 +8,7 @@ Notes:
 
 **Step 1. Download raw fastq files**
 
-Fastq files were downloaded using shell scripts in 4 batches, e.g., *[jie-acvd-sra-runs-download-SET1.sh](jacvd_1_meta_raw/jie-acvd-sra-runs-download-SET1.sh)*
+Fastq files were downloaded from NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) using shell scripts in 4 batches, e.g., *[jie-acvd-sra-runs-download-SET1.sh](jacvd_1_meta_raw/jie-acvd-sra-runs-download-SET1.sh)*
 
 ```Shell
 cd $WORKING_DIRECTORY/jie-acvd/jacvd_1_meta_raw
@@ -17,6 +17,7 @@ sbatch jie-acvd-sra-runs-download-SET2.sh
 sbatch jie-acvd-sra-runs-download-SET3.sh
 sbatch jie-acvd-sra-runs-download-SET4.sh
 ```
+385 sample files were available for public download via NCBI SRA.
 
 &nbsp;
 
