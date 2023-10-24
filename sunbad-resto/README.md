@@ -5,6 +5,8 @@ Notes:
 - The $USERNAME, $PASSWORD, and $AUTHORISATION_TOKEN used here are for the [MG-RAST](https://www.mg-rast.org/) system
 - [DeepThought HPC](https://deepthoughtdocs.flinders.edu.au/en/latest/) uses [SLURM](https://deepthoughtdocs.flinders.edu.au/en/latest/SLURM/SLURMIntro.html) job submission/queuing/management software
 
+&nbsp;
+
 **Step 1. Inspect & download screened fasta files from [MG-RAST](https://www.mg-rast.org/)**
 
 Using [MG-RAST tools](https://github.com/MG-RAST/MG-RAST-Tools) inspect available files for this case study (project mgp16379)
@@ -22,9 +24,13 @@ cd $WORKING_DIRECTORY/sunbad-resto/sunbad-resto_2_mgrast_screened
 sbatch sunbad-resto-MGRAST_meta_mgrast_screened_download.sh
 ```
 
+&nbsp;
+
 **Step 2. Perform QA/QC**
 
 QA/QC were not undertaken as this case study used [screened](https://help.mg-rast.org/user_manual.html#the-mg-rast-pipeline) fasta files direct from MG-RAST
+
+&nbsp;
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
