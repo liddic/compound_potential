@@ -1,0 +1,59 @@
+Query: ['/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017429_R1.good.fastq']
+Database used: 100
+Aligner used: diamond
+""
+Subsystem Level 1	Subsystem Level 2	Subsystem Level 3	Function	/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017429_R1.good.fastq	/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017429_R1.good.fastq %
+Amino Acids and Derivatives	Lysine, threonine, methionine, and cysteine	CBSS-84588.1.peg.1247	D-alanyl-D-alanine_carboxypeptidase_(EC_3.4.16.4)	0.25	0.6756756756756757
+Amino Acids and Derivatives	Lysine, threonine, methionine, and cysteine	Methionine Biosynthesis	5,10-methylenetetrahydrofolate_reductase_(EC_1.5.1.20)	0.3333333333333333	0.9009009009009009
+Carbohydrates	Central carbohydrate metabolism	Entner-Doudoroff Pathway	Uronate_isomerase_(EC_5.3.1.12)	0.5	1.3513513513513513
+Carbohydrates	Central carbohydrate metabolism	Glycolysis and Gluconeogenesis	Glucose-6-phosphate_isomerase_(EC_5.3.1.9)	0.5	1.3513513513513513
+Carbohydrates	Central carbohydrate metabolism	Methylglyoxal Metabolism	Hydroxyacylglutathione_hydrolase_(EC_3.1.2.6)	0.25	0.6756756756756757
+Carbohydrates	Di- and oligosaccharides	Beta-Glucoside Metabolism	Beta-glucosidase_(EC_3.2.1.21)	0.5	1.3513513513513513
+Carbohydrates	Di- and oligosaccharides	Fructooligosaccharides(FOS) and Raffinose Utilization	Beta-glucosidase_(EC_3.2.1.21)	0.5	1.3513513513513513
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	Beta-galactosidase_(EC_3.2.1.23)	0.3333333333333333	0.9009009009009009
+Carbohydrates	Di- and oligosaccharides	Lactose utilization	Beta-galactosidase_(EC_3.2.1.23)	0.8333333333333333	2.2522522522522523
+Carbohydrates	Di- and oligosaccharides	Maltose and Maltodextrin Utilization	Alpha-glucosidase_(EC_3.2.1.20)	0.5	1.3513513513513513
+Carbohydrates	Di- and oligosaccharides	Sucrose utilization	Sucrose-6-phosphate_hydrolase_(EC_3.2.1.B3)	2	5.405405405405405
+Carbohydrates	Di- and oligosaccharides	Trehalose Biosynthesis	1,4-alpha-glucan_(glycogen)_branching_enzyme,_GH-13-type_(EC_2.4.1.18)	0.5	1.3513513513513513
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Alpha-glucosidase_(EC_3.2.1.20)	0.5	1.3513513513513513
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Uronate_isomerase_(EC_5.3.1.12)	0.5	1.3513513513513513
+Carbohydrates	Monosaccharides	L-fucose utilization	Alpha-L-fucosidase_(EC_3.2.1.51)	1	2.7027027027027026
+Carbohydrates	Monosaccharides	L-rhamnose utilization	Rhamnulokinase_(EC_2.7.1.5)	1	2.7027027027027026
+Carbohydrates	Monosaccharides	Mannose Metabolism	Alpha-1,2-mannosidase	3	8.108108108108109
+Carbohydrates	One-carbon Metabolism	Formaldehyde assimilation: Ribulose monophosphate pathway	Glucose-6-phosphate_isomerase_(EC_5.3.1.9)	0.5	1.3513513513513513
+Carbohydrates	One-carbon Metabolism	One-carbon metabolism by tetrahydropterines	5,10-methylenetetrahydrofolate_reductase_(EC_1.5.1.20)	0.3333333333333333	0.9009009009009009
+Carbohydrates	Polysaccharides	Glycogen metabolism	1,4-alpha-glucan_(glycogen)_branching_enzyme,_GH-13-type_(EC_2.4.1.18)	0.5	1.3513513513513513
+Carbohydrates	Polysaccharides	Glycogen metabolism	Alpha-amylase_(EC_3.2.1.1)	1	2.7027027027027026
+Carbohydrates	Polysaccharides	Glycogen metabolism	Putative_glycogen_debranching_enzyme,_archaeal_type,_TIGR01561	1	2.7027027027027026
+Cell Wall and Capsule	-	Murein Hydrolases	D-alanyl-D-alanine_carboxypeptidase_(EC_3.4.16.4)	0.25	0.6756756756756757
+Cell Wall and Capsule	-	Peptidoglycan Biosynthesis	D-alanyl-D-alanine_carboxypeptidase_(EC_3.4.16.4)	0.25	0.6756756756756757
+Cell Wall and Capsule	-	Raj MurE	D-alanyl-D-alanine_carboxypeptidase_(EC_3.4.16.4)	0.25	0.6756756756756757
+Clustering-based subsystems	Isoprenoid/cell wall biosynthesis: PREDICTED UNDECAPRENYL DIPHOSPHATE PHOSPHATASE	CBSS-83331.1.peg.3039	Undecaprenyl_diphosphate_synthase_(EC_2.5.1.31)	0.25	0.6756756756756757
+Cofactors, Vitamins, Prosthetic Groups, Pigments	-	Test - DHFR	5,10-methylenetetrahydrofolate_reductase_(EC_1.5.1.20)	0.3333333333333333	0.9009009009009009
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Tetrapyrroles	Cobalamin	Queuosine_Biosynthesis_QueC_ATPase	0.2	0.5405405405405406
+DNA Metabolism	DNA replication	DNA-replication	Helicase_PriA_essential_for_oriC/DnaA-independent_DNA_replication	2	5.405405405405405
+Fatty Acids, Lipids, and Isoprenoids	Isoprenoids	Isoprenoid Biosynthesis	Undecaprenyl_diphosphate_synthase_(EC_2.5.1.31)	0.25	0.6756756756756757
+Fatty Acids, Lipids, and Isoprenoids	Isoprenoids	Isoprenoinds for Quinones	Undecaprenyl_diphosphate_synthase_(EC_2.5.1.31)	0.25	0.6756756756756757
+Fatty Acids, Lipids, and Isoprenoids	Isoprenoids	Polyprenyl Diphosphate Biosynthesis	Undecaprenyl_diphosphate_synthase_(EC_2.5.1.31)	0.25	0.6756756756756757
+Membrane Transport	-	Ton and Tol transport systems	TonB-dependent_receptor	1	2.7027027027027026
+Miscellaneous	-	EC 6.3.4.- Ligases that form carbon-nitrogen bonds	Queuosine_Biosynthesis_QueC_ATPase	0.2	0.5405405405405406
+Miscellaneous	Plant-Prokaryote comparative genomics	YebC	GTP-binding_and_nucleic_acid-binding_protein_YchF	0.5	1.3513513513513513
+Nucleosides and Nucleotides	Purines	Purine conversions	Adenylate_kinase_(EC_2.7.4.3)	1	2.7027027027027026
+Potassium metabolism	-	Glutathione-regulated potassium-efflux system and associated functions	Hydroxyacylglutathione_hydrolase_(EC_3.1.2.6)	0.25	0.6756756756756757
+Protein Metabolism	Protein biosynthesis	Ribosomal proteins, zinc requirement	LSU_ribosomal_protein_L32p_@_LSU_ribosomal_protein_L32p,_zinc-dependent	0.8333333333333333	2.2522522522522523
+Protein Metabolism	Protein biosynthesis	Ribosome LSU bacterial	LSU_ribosomal_protein_L32p	0.3333333333333333	0.9009009009009009
+Protein Metabolism	Protein biosynthesis	Ribosome LSU bacterial	LSU_ribosomal_protein_L32p_@_LSU_ribosomal_protein_L32p,_zinc-dependent	0.8333333333333333	2.2522522522522523
+Protein Metabolism	Protein biosynthesis	Universal GTPases	GTP-binding_and_nucleic_acid-binding_protein_YchF	0.5	1.3513513513513513
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Cys	Cysteinyl-tRNA_synthetase_(EC_6.1.1.16)	1	2.7027027027027026
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Val	Valyl-tRNA_synthetase_(EC_6.1.1.9)	1	2.7027027027027026
+Protein Metabolism	Protein degradation	Protein degradation	Aminopeptidase_C_(EC_3.4.22.40)	1	2.7027027027027026
+Protein Metabolism	Protein processing and modification	Lipoprotein Biosynthesis	Lipoprotein_signal_peptidase_(EC_3.4.23.36)	0.5	1.3513513513513513
+Protein Metabolism	Protein processing and modification	Signal peptidase	Lipoprotein_signal_peptidase_(EC_3.4.23.36)	0.5	1.3513513513513513
+RNA Metabolism	RNA processing and modification	Queuosine exploration RZ	Queuosine_Biosynthesis_QueC_ATPase	0.2	0.5405405405405406
+RNA Metabolism	RNA processing and modification	Queuosine-Archaeosine Biosynthesis	Queuosine_Biosynthesis_QueC_ATPase	0.2	0.5405405405405406
+RNA Metabolism	RNA processing and modification	Test Q	Queuosine_Biosynthesis_QueC_ATPase	0.2	0.5405405405405406
+Respiration	-	Soluble cytochromes and functionally related electron carriers	Ferredoxin	2	5.405405405405405
+Stress Response	Oxidative stress	Glutathione: Non-redox reactions	Hydroxyacylglutathione_hydrolase_(EC_3.1.2.6)	0.25	0.6756756756756757
+Stress Response	Oxidative stress	Oxidative stress	Zinc_uptake_regulation_protein_ZUR	3	8.108108108108109
+Sulfur Metabolism	-	Galactosylceramide and Sulfatide metabolism	Beta-galactosidase_(EC_3.2.1.23)	0.8333333333333333	2.2522522522522523
+Virulence	Resistance to antibiotics and toxic compounds	Cobalt-zinc-cadmium resistance	Hydroxyacylglutathione_hydrolase_(EC_3.1.2.6)	0.25	0.6756756756756757

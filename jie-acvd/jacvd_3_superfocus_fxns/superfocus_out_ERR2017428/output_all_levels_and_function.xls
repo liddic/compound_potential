@@ -1,0 +1,55 @@
+Query: ['/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017428_R1.good.fastq']
+Database used: 100
+Aligner used: diamond
+""
+Subsystem Level 1	Subsystem Level 2	Subsystem Level 3	Function	/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017428_R1.good.fastq	/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017428_R1.good.fastq %
+Amino Acids and Derivatives	Aromatic amino acids and derivatives	Aromatic amino acid interconversions with aryl acids	Phenylacetate-coenzyme_A_ligase_(EC_6.2.1.30)	1	2.083333333333333
+Amino Acids and Derivatives	Glutamine, glutamate, aspartate, asparagine; ammonia assimilation	Glutamine, Glutamate, Aspartate and Asparagine Biosynthesis	Asparagine_synthetase_[glutamine-hydrolyzing]_(EC_6.3.5.4)	1	2.083333333333333
+Amino Acids and Derivatives	Glutamine, glutamate, aspartate, asparagine; ammonia assimilation	Glutamine, Glutamate, Aspartate and Asparagine Biosynthesis	Glutamate_synthase_[NADPH]_small_chain_(EC_1.4.1.13)	1.0	2.083333333333333
+Amino Acids and Derivatives	Lysine, threonine, methionine, and cysteine	Threonine degradation	Threonine_dehydrogenase_and_related_Zn-dependent_dehydrogenases	1	2.083333333333333
+Amino Acids and Derivatives	Lysine, threonine, methionine, and cysteine	Threonine degradation	Type_III_PLP_/_low-specificity_D-threonine_aldolase	0.25	0.5208333333333333
+Amino Acids and Derivatives	Lysine, threonine, methionine, and cysteine	Threonine degradation	low-specificity_D-threonine_aldolase	0.25	0.5208333333333333
+Amino Acids and Derivatives	Proline and 4-hydroxyproline	Proline, 4-hydroxyproline uptake and utilization	Dipeptidyl_peptidase_IV_in_4-hydroxyproline_catabolic_gene_cluster	1	2.083333333333333
+Carbohydrates	Central carbohydrate metabolism	Entner-Doudoroff Pathway	Gluconolactonase_(EC_3.1.1.17)	1	2.083333333333333
+Carbohydrates	Central carbohydrate metabolism	Entner-Doudoroff Pathway	Mannonate_dehydratase_(EC_4.2.1.8)	1.0	2.083333333333333
+Carbohydrates	Central carbohydrate metabolism	Glycolysis and Gluconeogenesis	Fructose-1,6-bisphosphatase,_Bacillus_type_(EC_3.1.3.11)	2	4.166666666666666
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	Beta-galactosidase_(EC_3.2.1.23)	1.833333333333333	3.819444444444444
+Carbohydrates	Di- and oligosaccharides	Lactose utilization	Beta-galactosidase_(EC_3.2.1.23)	4.333333333333333	9.027777777777777
+Carbohydrates	Di- and oligosaccharides	Lactose utilization	Galactoside_O-acetyltransferase_(EC_2.3.1.18)	1	2.083333333333333
+Carbohydrates	Di- and oligosaccharides	Lactose utilization	N-acetylglucosamine-1-phosphate_uridyltransferase_(EC_2.7.7.23)_/_Glucosamine-1-phosphate_N-acetyltransferase_(EC_2.3.1.157)	1	2.083333333333333
+Carbohydrates	Di- and oligosaccharides	Trehalose Biosynthesis	Glycogen_debranching_enzyme_(EC_3.2.1.-)	0.5	1.0416666666666665
+Carbohydrates	Fermentation	Acetoin, butanediol metabolism	Glucose-1-phosphate_cytidylyltransferase_(EC_2.7.7.33)	0.5	1.0416666666666665
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Mannonate_dehydratase_(EC_4.2.1.8)	1.0	2.083333333333333
+Carbohydrates	Monosaccharides	L-rhamnose utilization	Predicted_rhamnogalacturonan_lyase_in_rhamnose_utilization_cluster	1	2.083333333333333
+Carbohydrates	Monosaccharides	Mannose Metabolism	Alpha-1,2-mannosidase	1	2.083333333333333
+Carbohydrates	Monosaccharides	Mannose Metabolism	Beta-mannosidase_(EC_3.2.1.25)	1	2.083333333333333
+Carbohydrates	One-carbon Metabolism	Serine-glyoxylate cycle	Type_III_PLP_/_low-specificity_D-threonine_aldolase	0.25	0.5208333333333333
+Carbohydrates	One-carbon Metabolism	Serine-glyoxylate cycle	low-specificity_D-threonine_aldolase	0.25	0.5208333333333333
+Carbohydrates	Polysaccharides	Glycogen metabolism	Glycogen_debranching_enzyme_(EC_3.2.1.-)	0.5	1.0416666666666665
+Cell Wall and Capsule	-	Raj MurE	N-acetylmuramoyl-L-alanine_amidase_(EC_3.5.1.28)	1	2.083333333333333
+Cell Wall and Capsule	Capsular and extracellular polysacchrides	Exopolysaccharide Biosynthesis	Glycosyl_transferase,_group_1_family_protein	1	2.083333333333333
+Cell Wall and Capsule	Capsular and extracellular polysacchrides	Rhamnose containing glycans	dTDP-glucose_4,6-dehydratase_(EC_4.2.1.46)	0.5	1.0416666666666665
+Cell Wall and Capsule	Capsular and extracellular polysacchrides	Sialic Acid Metabolism	N-acylglucosamine_2-epimerase_(EC_5.1.3.8)	1	2.083333333333333
+Cell Wall and Capsule	Capsular and extracellular polysacchrides	dTDP-rhamnose synthesis	Glucose-1-phosphate_cytidylyltransferase_(EC_2.7.7.33)	0.5	1.0416666666666665
+Cell Wall and Capsule	Capsular and extracellular polysacchrides	dTDP-rhamnose synthesis	dTDP-glucose_4,6-dehydratase_(EC_4.2.1.46)	0.5	1.0416666666666665
+Clustering-based subsystems	Shiga toxin cluster	CBSS-194948.1.peg.143	Phage_endolysin	1	2.083333333333333
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Quinone cofactors	Ubiquinone biosynthesis -- gjo	3-demethylubiquinone-9_3-methyltransferase_(EC_2.1.1.64)	1	2.083333333333333
+Membrane Transport	-	Ton and Tol transport systems	TonB-dependent_receptor	3	6.25
+Membrane Transport	Uni- Sym- and Antiporters	Proton-dependent Peptide Transporters	Di-/tripeptide_transporter	0.5	1.0416666666666665
+Membrane Transport	Uni- Sym- and Antiporters	Proton-dependent Peptide Transporters	Di-tripeptide/cation_symporter	0.5	1.0416666666666665
+Miscellaneous	Plant-Prokaryote comparative genomics	YebC	Threonyl-tRNA_synthetase_(EC_6.1.1.3)	0.5	1.0416666666666665
+Nitrogen Metabolism	-	Ammonia assimilation	Glutamate_synthase_[NADPH]_small_chain_(EC_1.4.1.13)	1.0	2.083333333333333
+Nucleosides and Nucleotides	-	Ribonucleotide reduction	Ribonucleotide_reductase_of_class_III_(anaerobic),_activating_protein_(EC_1.97.1.4)	1	2.083333333333333
+Nucleosides and Nucleotides	-	Ribonucleotide reduction	Ribonucleotide_reductase_of_class_III_(anaerobic),_large_subunit_(EC_1.17.4.2)	2	4.166666666666666
+Protein Metabolism	Protein biosynthesis	Ribosome biogenesis bacterial	Ribosomal-protein-S5p-alanine_acetyltransferase_(EC_2.3.1.128)	0.5	1.0416666666666665
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Asp and Asn	Asparaginyl-tRNA_synthetase_(EC_6.1.1.22)	0.25	0.5208333333333333
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Glu and Gln	Asparaginyl-tRNA_synthetase_(EC_6.1.1.22)	0.25	0.5208333333333333
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Thr	Threonyl-tRNA_synthetase_(EC_6.1.1.3)	0.5	1.0416666666666665
+Protein Metabolism	Protein processing and modification	Ribosomal protein S5p acylation	Ribosomal-protein-S5p-alanine_acetyltransferase_(EC_2.3.1.128)	0.5	1.0416666666666665
+RNA Metabolism	RNA processing and modification	tRNA modification Archaea	Asparaginyl-tRNA_synthetase_(EC_6.1.1.22)	0.25	0.5208333333333333
+RNA Metabolism	RNA processing and modification	tRNA mods Archaea	Asparaginyl-tRNA_synthetase_(EC_6.1.1.22)	0.25	0.5208333333333333
+RNA Metabolism	Transcription	Transcription initiation, bacterial sigma factors	RNA_polymerase_sigma-54_factor_RpoN	0.5	1.0416666666666665
+RNA Metabolism	Transcription	Transcription initiation, bacterial sigma factors	RNA_polymerase_sigma_factor_RpoE	0.5	1.0416666666666665
+Stress Response	Oxidative stress	Oxygen stress response / Human gut microbiome	Alkyl_hydroperoxide_reductase_protein_F_(EC_1.6.4.-)	0.5	1.0416666666666665
+Sulfur Metabolism	-	Galactosylceramide and Sulfatide metabolism	Beta-galactosidase_(EC_3.2.1.23)	4.833333333333333	10.069444444444443
+Sulfur Metabolism	-	Thioredoxin-disulfide reductase	Alkyl_hydroperoxide_reductase_protein_F_(EC_1.6.4.-)	0.5	1.0416666666666665

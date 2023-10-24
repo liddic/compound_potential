@@ -1,0 +1,84 @@
+Query: ['/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017421_R1.good.fastq']
+Database used: 100
+Aligner used: diamond
+""
+Subsystem Level 1	Subsystem Level 2	Subsystem Level 3	Function	/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017421_R1.good.fastq	/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017421_R1.good.fastq %
+Carbohydrates	-	Unknown carbohydrate utilization ( cluster Yeg )	Glycosyl_hydrolase_YegX,_family_25	0.5	1.2195121951219507
+Carbohydrates	-	Unknown carbohydrate utilization ( cluster Yeg )	Lyzozyme_M1_(1,4-beta-N-acetylmuramidase)_(EC_3.2.1.17)	0.5	1.2195121951219507
+Carbohydrates	Aminosugars	Chitin and N-acetylglucosamine utilization	Beta-hexosaminidase_(EC_3.2.1.52)	0.5	1.2195121951219507
+Carbohydrates	Aminosugars	N-Acetyl-Galactosamine and Galactosamine Utilization	Beta-hexosaminidase_(EC_3.2.1.52)	0.5	1.2195121951219507
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	2-oxoglutarate_oxidoreductase,_beta_subunit_(EC_1.2.7.3)	0.5	1.2195121951219507
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Carbohydrates	Central carbohydrate metabolism	acinetobacter tca	2-oxoglutarate_oxidoreductase,_beta_subunit_(EC_1.2.7.3)	0.5	1.2195121951219507
+Carbohydrates	Central carbohydrate metabolism	acinetobacter tca	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Carbohydrates	Di- and oligosaccharides	Fructooligosaccharides(FOS) and Raffinose Utilization	Alpha-galactosidase_(EC_3.2.1.22)	0.3333333333333333	0.8130081300813006
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	Alpha-galactosidase_(EC_3.2.1.22)	0.3333333333333333	0.8130081300813006
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	Beta-galactosidase_(EC_3.2.1.23)	1.0	2.4390243902439015
+Carbohydrates	Di- and oligosaccharides	Lactose utilization	Beta-galactosidase_(EC_3.2.1.23)	1.0	2.4390243902439015
+Carbohydrates	Di- and oligosaccharides	Melibiose Utilization	Alpha-galactosidase_(EC_3.2.1.22)	0.3333333333333333	0.8130081300813006
+Carbohydrates	Di- and oligosaccharides	Sucrose utilization	Sucrose-6-phosphate_hydrolase_(EC_3.2.1.B3)	1	2.4390243902439015
+Carbohydrates	Di- and oligosaccharides	Trehalose Biosynthesis	1,4-alpha-glucan_(glycogen)_branching_enzyme,_GH-13-type_(EC_2.4.1.18)	0.5	1.2195121951219507
+Carbohydrates	Di- and oligosaccharides	Trehalose Uptake and Utilization	Trehalase_(EC_3.2.1.28)	1	2.4390243902439015
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Alpha-glucuronidase_(EC_3.2.1.139)	0.5	1.2195121951219507
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Xylan_alpha-1,2-glucuronosidase_(EC_3.2.1.131)	0.5	1.2195121951219507
+Carbohydrates	Monosaccharides	Mannose Metabolism	Alpha-1,2-mannosidase	2	4.878048780487803
+Carbohydrates	Monosaccharides	Xylose utilization	Alpha-xylosidase_(EC_3.2.1.-)	1	2.4390243902439015
+Carbohydrates	One-carbon Metabolism	Serine-glyoxylate cycle	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Carbohydrates	Polysaccharides	Glycogen metabolism	1,4-alpha-glucan_(glycogen)_branching_enzyme,_GH-13-type_(EC_2.4.1.18)	0.5	1.2195121951219507
+Cell Wall and Capsule	Capsular and extracellular polysacchrides	Capsular Polysaccharides Biosynthesis and Assembly	Oligosaccharide_repeat_unit_polymerase_Wzy	0.5	1.2195121951219507
+Cell Wall and Capsule	Capsular and extracellular polysacchrides	Sialic Acid Metabolism	N-acylglucosamine_2-epimerase_(EC_5.1.3.8)	1	2.4390243902439015
+Cell Wall and Capsule	Gram-Negative cell wall components	KDO2-Lipid A biosynthesis	Oligosaccharide_repeat_unit_polymerase_Wzy	0.5	1.2195121951219507
+Cell Wall and Capsule	Gram-Negative cell wall components	LOS core oligosaccharide biosynthesis	Lipopolysaccharide_1,3-galactosyltransferase_(EC_2.4.1.44)	0.5	1.2195121951219507
+Cell Wall and Capsule	Gram-Negative cell wall components	LOS core oligosaccharide biosynthesis	UDP-glucose:(glucosyl)lipopolysaccharide_alpha-1,3-glucosyltransferase_WaaO_(EC_2.4.1.-)	0.5	1.2195121951219507
+Cell Wall and Capsule	Gram-Negative cell wall components	Lipid A-Ara4N pathway ( Polymyxin resistance )	Polymyxin_resistance_protein_ArnT,_undecaprenyl_phosphate-alpha-L-Ara4N_transferase;_Melittin_resistance_protein_PqaB	1	2.4390243902439015
+Clustering-based subsystems	-	CBSS-216592.1.peg.3937	Modulator_of_drug_activity_B	1	2.4390243902439015
+Clustering-based subsystems	-	CBSS-216592.1.peg.3937	Putative_acid--amine_ligase_YgiC	0.25	0.6097560975609754
+Clustering-based subsystems	-	CBSS-216592.1.peg.3937	Similarity_with_glutathionylspermidine_synthase_(EC_6.3.1.8),_group_1	0.25	0.6097560975609754
+Clustering-based subsystems	Biosynthesis of galactoglycans and related lipopolysacharides	CBSS-258594.1.peg.3339	Glycosyltransferase	1	2.4390243902439015
+Clustering-based subsystems	TldD cluster	CBSS-354.1.peg.2917	TldD_protein,_part_of_TldE/TldD_proteolytic_complex	0.5	1.2195121951219507
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Folate and pterines	5-FCL-like protein	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Folate and pterines	YgfZ	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Cofactors, Vitamins, Prosthetic Groups, Pigments	NAD and NADP	NAD and NADP cofactor biosynthesis global	Nicotinate_phosphoribosyltransferase_(EC_2.4.2.11)	0.25	0.6097560975609754
+Cofactors, Vitamins, Prosthetic Groups, Pigments	NAD and NADP	NAD and NADP cofactor biosynthesis global	Nicotinate_phosphoribosyltransferase_(EC_6.3.4.21)	0.25	0.6097560975609754
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Riboflavin, FMN, FAD	Flavodoxin	Flavodoxin_1	1	2.4390243902439015
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Tetrapyrroles	Cobalamin	Cobalamin_synthase	0.2	0.4878048780487803
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Tetrapyrroles	Cobalamin	Cobalamin_synthase_(EC_2.7.8.26)	0.2	0.4878048780487803
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Tetrapyrroles	Cobalamin synthesis	Cobalamin_synthase_(EC_2.7.8.26)	0.2	0.4878048780487803
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Tetrapyrroles	Coenzyme B12 biosynthesis	Cobalamin_synthase	0.2	0.4878048780487803
+Cofactors, Vitamins, Prosthetic Groups, Pigments	Tetrapyrroles	Coenzyme B12 biosynthesis	Cobalamin_synthase_(EC_2.7.8.26)	0.2	0.4878048780487803
+DNA Metabolism	DNA replication	DNA-replication	Helicase_PriA_essential_for_oriC/DnaA-independent_DNA_replication	1	2.4390243902439015
+Membrane Transport	Protein and nucleoprotein secretion system, Type IV	Type 4 conjugative transfer system, IncI1 type	IncI1_plasmid_conjugative_transfer_ATPase_PilQ	1	2.4390243902439015
+Miscellaneous	Plant-Prokaryote comparative genomics	Omega-amidase	Omega_amidase,_Nit2_homolog_(EC_3.5.1.3)	0.2	0.4878048780487803
+Miscellaneous	Plant-Prokaryote comparative genomics	Omega-amidase KE	Aliphatic_amidase_AmiE_(EC_3.5.1.4)	0.2	0.4878048780487803
+Miscellaneous	Plant-Prokaryote comparative genomics	Omega-amidase KE	Omega_amidase,_Nit2_homolog_(EC_3.5.1.3)	0.2	0.4878048780487803
+Miscellaneous	Plant-Prokaryote comparative genomics	Omega-amidase KE	Putative_hydrolase	0.2	0.4878048780487803
+Miscellaneous	Plant-Prokaryote comparative genomics	Omega-amidase KE2	Omega_amidase,_Nit2_homolog_(EC_3.5.1.3)	0.2	0.4878048780487803
+Miscellaneous	Plant-Prokaryote comparative genomics	YgfZ-Fe-S	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Phages, Prophages, Transposable elements, Plasmids	Transposable elements	Conjugative transposon, Bacteroidales	Conjugative_transposon_protein_TraG	1	2.4390243902439015
+Protein Metabolism	Protein biosynthesis	Ribosomal proteins, zinc requirement	LSU_ribosomal_protein_L32p_@_LSU_ribosomal_protein_L32p,_zinc-dependent	0.3333333333333333	0.8130081300813006
+Protein Metabolism	Protein biosynthesis	Ribosome LSU bacterial	LSU_ribosomal_protein_L32p	0.3333333333333333	0.8130081300813006
+Protein Metabolism	Protein biosynthesis	Ribosome LSU bacterial	LSU_ribosomal_protein_L32p_@_LSU_ribosomal_protein_L32p,_zinc-dependent	0.3333333333333333	0.8130081300813006
+Protein Metabolism	Protein biosynthesis	Ribosome biogenesis bacterial	Ribosomal-protein-S5p-alanine_acetyltransferase	1	2.4390243902439015
+Protein Metabolism	Protein biosynthesis	Ribosome biogenesis bacterial	Ribosomal_large_subunit_pseudouridine_synthase_A_(EC_4.2.1.70)	1	2.4390243902439015
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Cys	Cysteinyl-tRNA_synthetase_(EC_6.1.1.16)	1	2.4390243902439015
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Val	Valyl-tRNA_synthetase_(EC_6.1.1.9)	1	2.4390243902439015
+Protein Metabolism	Protein degradation	Putative TldE-TldD proteolytic complex	TldD_protein,_part_of_TldE/TldD_proteolytic_complex	0.5	1.2195121951219507
+Protein Metabolism	Selenoproteins	Selenocysteine metabolism	Formate_dehydrogenase_O_alpha_subunit_(EC_1.2.1.2)_@_selenocysteine-containing	0.3333333333333333	0.8130081300813006
+Respiration	-	Formate hydrogenase	Formate_dehydrogenase-O,_major_subunit_(EC_1.2.1.2)	1	2.4390243902439015
+Respiration	Electron accepting reactions	Anaerobic respiratory reductases	Fe-S-cluster-containing_hydrogenase_components_1	0.5	1.2195121951219507
+Respiration	Electron accepting reactions	Respiration / HGM	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Respiration	Electron accepting reactions	Respiration / Human gut microbiome	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Respiration	Electron donating reactions	Formate dehydrogenase	Formate_dehydrogenase_O_alpha_subunit_(EC_1.2.1.2)_@_selenocysteine-containing	0.3333333333333333	0.8130081300813006
+Respiration	Electron donating reactions	Formate dehydrogenase	Formate_dehydrogenase_O_alpha_subunit_(EC_1.2.1.2)_@_selenocysteine-containing_#_frameshift	0.3333333333333333	0.8130081300813006
+Respiration	Electron donating reactions	Hydrogenases	Fe-S-cluster-containing_hydrogenase_components_1	0.5	1.2195121951219507
+Respiration	Electron donating reactions	Succinate dehydrogenase	Succinate_dehydrogenase_iron-sulfur_protein_(EC_1.3.99.1)	0.1111111111111111	0.27100271002710014
+Secondary Metabolism	Biologically active compounds in metazoan cell defence and differentiation	Steroid sulfates	Arylsulfatase_(EC_3.1.6.1)	0.3333333333333333	0.8130081300813006
+Stress Response	Detoxification	Housecleaning nucleoside triphosphate pyrophosphatases	5-nucleotidase_SurE_(EC_3.1.3.5)	1	2.4390243902439015
+Stress Response	Oxidative stress	Glutathionylspermidine and Trypanothione	Putative_acid--amine_ligase_YgiC	0.25	0.6097560975609754
+Stress Response	Oxidative stress	Glutathionylspermidine and Trypanothione	Similarity_with_glutathionylspermidine_synthase_(EC_6.3.1.8),_group_1	0.25	0.6097560975609754
+Stress Response	Oxidative stress	Redox-dependent regulation of nucleus processes	Nicotinate_phosphoribosyltransferase_(EC_2.4.2.11)	0.25	0.6097560975609754
+Stress Response	Oxidative stress	Redox-dependent regulation of nucleus processes	Nicotinate_phosphoribosyltransferase_(EC_6.3.4.21)	0.25	0.6097560975609754
+Sulfur Metabolism	-	Galactosylceramide and Sulfatide metabolism	Arylsulfatase_(EC_3.1.6.1)	0.3333333333333333	0.8130081300813006
+Sulfur Metabolism	-	Galactosylceramide and Sulfatide metabolism	Beta-galactosidase_(EC_3.2.1.23)	1.0	2.4390243902439015
+Sulfur Metabolism	Organic sulfur assimilation	Alkanesulfonate assimilation	Arylsulfatase_(EC_3.1.6.1)	0.3333333333333333	0.8130081300813006
+Virulence	-	Mycobacterium virulence operon involved in DNA transcription	DNA-directed_RNA_polymerase_beta'_subunit_(EC_2.7.7.6)	1	2.4390243902439015
