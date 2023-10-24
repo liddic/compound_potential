@@ -1,4 +1,4 @@
-## Workflow on DeepThought HPC - AMI case study
+## Workflow on DeepThought HPC - Disturbed vs Natural soil case study, from selected Australian Microbiome Initiative (AMI) data
 
 Notes:
 - $WORKING_DIRECTORY and $LOCAL_WORKING_DIRECTORY should be substituted for appropriate folder paths
