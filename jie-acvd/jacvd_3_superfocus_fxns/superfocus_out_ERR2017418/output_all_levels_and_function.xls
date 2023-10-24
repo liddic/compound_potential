@@ -1,0 +1,50 @@
+Query: ['/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017418_R1.good.fastq']
+Database used: 100
+Aligner used: diamond
+""
+Subsystem Level 1	Subsystem Level 2	Subsystem Level 3	Function	/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017418_R1.good.fastq	/scratch/user/lidd0026/jie-acvd/jacvd_2_fastp_qc/ERR2017418_R1.good.fastq %
+Amino Acids and Derivatives	Lysine, threonine, methionine, and cysteine	Methionine Biosynthesis	Adenosylhomocysteinase_(EC_3.3.1.1)	0.5	1.1627906976744187
+Amino Acids and Derivatives	Lysine, threonine, methionine, and cysteine	Methionine Degradation	Adenosylhomocysteinase_(EC_3.3.1.1)	0.5	1.1627906976744187
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	Beta-galactosidase_(EC_3.2.1.23)	1.0	2.3255813953488373
+Carbohydrates	Di- and oligosaccharides	Lactose utilization	Beta-galactosidase_(EC_3.2.1.23)	2.0	4.651162790697675
+Carbohydrates	Di- and oligosaccharides	Trehalose Biosynthesis	1,4-alpha-glucan_(glycogen)_branching_enzyme,_GH-13-type_(EC_2.4.1.18)	2.0	4.651162790697675
+Carbohydrates	Monosaccharides	L-Arabinose utilization	Alpha-N-arabinofuranosidase_2_(EC_3.2.1.55)	1	2.3255813953488373
+Carbohydrates	Monosaccharides	Mannose Metabolism	Alpha-1,2-mannosidase	3	6.976744186046512
+Carbohydrates	Polysaccharides	Cellulosome	Alpha-amylase_(Neopullulanase)_SusA_(EC_3.2.1.135)	1	2.3255813953488373
+Carbohydrates	Polysaccharides	Cellulosome	Alpha-glucosidase_SusB_(EC_3.2.1.20)	1	2.3255813953488373
+Carbohydrates	Polysaccharides	Glycogen metabolism	1,4-alpha-glucan_(glycogen)_branching_enzyme,_GH-13-type_(EC_2.4.1.18)	2.0	4.651162790697675
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol-3-phosphate_transporter	1	2.3255813953488373
+Cell Wall and Capsule	-	Peptidoglycan Biosynthesis	Monofunctional_biosynthetic_peptidoglycan_transglycosylase_(EC_2.4.2.-)	1	2.3255813953488373
+Cell Wall and Capsule	Gram-Negative cell wall components	KDO2-Lipid A biosynthesis	3-deoxy-D-manno-octulosonate_8-phosphate_phosphatase_(EC_3.1.3.45)	1	2.3255813953488373
+Cell Wall and Capsule	Gram-Negative cell wall components	KDO2-Lipid A biosynthesis	Lipid_A_biosynthesis_lauroyl_acyltransferase_(EC_2.3.1.-)	1	2.3255813953488373
+Clustering-based subsystems	Protein export?	CBSS-393121.3.peg.2760	NLP/P60_family_protein	1	2.3255813953488373
+Clustering-based subsystems	clustering of 2 heat shock proteins, phosphoenolpyruvate carboxykinase and a putative hydrolase	Rcs negative regulator IgaA	FIG001957:_putative_hydrolase	0.5	1.1627906976744187
+Clustering-based subsystems	clustering of 2 heat shock proteins, phosphoenolpyruvate carboxykinase and a putative hydrolase	Rcs negative regulator IgaA	GMP/IMP_nucleotidase_YrfG	0.5	1.1627906976744187
+DNA Metabolism	DNA replication	DNA-replication	Helicase_PriA_essential_for_oriC/DnaA-independent_DNA_replication	2	4.651162790697675
+Membrane Transport	-	Ton and Tol transport systems	TonB-dependent_receptor	1	2.3255813953488373
+Nucleosides and Nucleotides	-	Ribonucleotide reduction	Ribonucleotide_reductase_of_class_III_(anaerobic),_activating_protein_(EC_1.97.1.4)	1	2.3255813953488373
+Nucleosides and Nucleotides	Purines	Xanthosine utilization (xap region)	Xanthosine_permease	1	2.3255813953488373
+Phages, Prophages, Transposable elements, Plasmids	Phages, Prophages	IbrA and IbrB: co-activators of prophage gene expression	Co-activator_of_prophage_gene_expression_IbrA	1	2.3255813953488373
+Phosphorus Metabolism	-	Alkylphosphonate utilization	Alkylphosphonate_utilization_operon_protein_PhnA	0.5	1.1627906976744187
+Phosphorus Metabolism	-	Alkylphosphonate utilization	Protein_PhnA_##_not_part_of_phosphonate_utilization	0.5	1.1627906976744187
+Protein Metabolism	Protein biosynthesis	Ribosome biogenesis bacterial	Ribosomal-protein-S5p-alanine_acetyltransferase	0.5	1.1627906976744187
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Cys	Cysteinyl-tRNA_synthetase_(EC_6.1.1.16)	1	2.3255813953488373
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Met	Methionyl-tRNA_synthetase_(EC_6.1.1.10)	1	2.3255813953488373
+Protein Metabolism	Protein biosynthesis	tRNA aminoacylation, Val	Valyl-tRNA_synthetase_(EC_6.1.1.9)	1	2.3255813953488373
+Protein Metabolism	Protein processing and modification	Lipoprotein Biosynthesis	Prolipoprotein_diacylglyceryl_transferase_(EC_2.4.99.-)	1	2.3255813953488373
+Protein Metabolism	Protein processing and modification	Peptide methionine sulfoxide reductase	Thiol:disulfide_oxidoreductase_associated_with_MetSO_reductase	0.5	1.1627906976744187
+Protein Metabolism	Protein processing and modification	Ribosomal protein S5p acylation	Ribosomal-protein-S5p-alanine_acetyltransferase	0.5	1.1627906976744187
+Protein Metabolism	Protein processing and modification	Signal peptidase	Signal_peptidase_I_(EC_3.4.21.89)	1	2.3255813953488373
+RNA Metabolism	RNA processing and modification	ATP-dependent RNA helicases, bacterial	ATP-dependent_RNA_helicase_RhlB	1	2.3255813953488373
+Respiration	-	Biogenesis of c-type cytochromes	Thiol:disulfide_oxidoreductase_related_to_ResA	0.5	1.1627906976744187
+Respiration	Electron accepting reactions	Respiration / HGM	Cytochrome_d_ubiquinol_oxidase_subunit_I_(EC_1.10.3.-)	0.25	0.5813953488372093
+Respiration	Electron accepting reactions	Respiration / Human gut microbiome	Cytochrome_d_ubiquinol_oxidase_subunit_I_(EC_1.10.3.-)	0.25	0.5813953488372093
+Respiration	Electron accepting reactions	Terminal cytochrome d ubiquinol oxidases	Cytochrome_d_ubiquinol_oxidase_subunit_I_(EC_1.10.3.-)	0.25	0.5813953488372093
+Respiration	Electron accepting reactions	Terminal cytochrome oxidases	Cytochrome_d_ubiquinol_oxidase_subunit_I_(EC_1.10.3.-)	0.25	0.5813953488372093
+Stress Response	Dessication stress	O-antigen capsule important for environmental persistence	Outer_membrane_sugar_transport_protein_YshA	1	2.3255813953488373
+Stress Response	Heat shock	At5g63290	Ribosomal_protein_L11_methyltransferase_(EC_2.1.1.-)	1	2.3255813953488373
+Stress Response	Osmotic stress	Choline and Betaine Uptake and Betaine Biosynthesis	High-affinity_choline_uptake_protein_BetT	1	2.3255813953488373
+Stress Response	Oxidative stress	Oxidative stress	Rubrerythrin	0.5	1.1627906976744187
+Stress Response	Oxidative stress	Rubrerythrin	Rubrerythrin	0.5	1.1627906976744187
+Sulfur Metabolism	-	Galactosylceramide and Sulfatide metabolism	Beta-galactosidase_(EC_3.2.1.23)	2.0	4.651162790697675
+Virulence, Disease and Defense	Adhesion	Type 1 pili (mannose-sensitive fimbriae)	mannose-specific_adhesin_FimH	1	2.3255813953488373
