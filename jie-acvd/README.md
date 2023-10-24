@@ -1,4 +1,4 @@
-## Workflow on DeepThought HPC - Jie et al ACVD case study
+## Workflow on DeepThought HPC - Atherosclerotic cardiovascular disease (ACVD) case study, from Jie et al (2017)
 
 Notes:
 - $WORKING_DIRECTORY and $LOCAL_WORKING_DIRECTORY should be substituted for appropriate folder paths
