@@ -8,11 +8,14 @@ Notes:
 
 **Step 1. Download raw fastq files**
 
-This runs the python script *[ami_1_meta_download_hpc.py](ami_1_meta_raw_fastq/ami_1_meta_download_hpc.py)*
+Fastq files were downloaded using shell scripts in 4 batches, e.g., *[jie-acvd-sra-runs-download-SET1.sh](jacvd_1_meta_raw/jie-acvd-sra-runs-download-SET1.sh)*
 
 ```Shell
-cd $WORKING_DIRECTORY/ami_1_meta_raw_fastq
-sbatch run_ami_1_meta_download_hpc.sh
+cd $WORKING_DIRECTORY/jie-acvd/jacvd_1_meta_raw
+sbatch jie-acvd-sra-runs-download-SET1.sh
+sbatch jie-acvd-sra-runs-download-SET2.sh
+sbatch jie-acvd-sra-runs-download-SET3.sh
+sbatch jie-acvd-sra-runs-download-SET4.sh
 ```
 
 &nbsp;
