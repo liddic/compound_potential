@@ -53,6 +53,8 @@ find -type f -name '*_R1.single.fastq'
 find -type f -name '*_R1.single.fastq' -delete
 ```
 
+Note: with the specific QC parameters used here, the following sequence files failed to generate "good" R1 sequences (as required for SUPER-FOCUS): ERR479093, ERR479094, ERR479095, ERR479096, ERR479146, ERR479148, ERR479176, ERR479322.
+
 &nbsp;
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
