@@ -11,8 +11,6 @@ Notes:
 Fastq files were downloaded from NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) using shell scripts in 4 batches, e.g., *[forslund-t2d-SWE-sra-runs-download-SET1.sh](ft2d_1_meta_raw/forslund-t2d-SWE-sra-runs-download-SET1.sh)*
 
 We used Forslund et al's Swedish population dataset (n = 145). 
-There were either 2 or 4 sequencing runs per subject (total 351 SRA Runs).
-
 
 ```Shell
 cd $WORKING_DIRECTORY/forslund-t2d/ft2d_1_meta_raw
@@ -29,24 +27,24 @@ sbatch forslund-t2d-SWE-sra-runs-download-SET4.sh
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports were generated for a representative selection of raw sequence files
 
 ```Shell
-cd $WORKING_DIRECTORY/zeller-crc/zcrc_1_meta_raw/fastqc_reports
-sbatch zeller_crc_2a_fastqc_inspect_eg.sh
+cd $WORKING_DIRECTORY/forslund-t2d/ft2d_1_meta_raw/fastqc_reports
+sbatch forslund_t2d_2a_fastqc_inspect_eg.sh
 ```
 
 Next we performed [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
 
-To iterate through samples and R1/R2 reads this snakefile was used: [zeller_crc_2b_fastp_hpc.snakefile](zcrc_2_fastp_qc/zeller_crc_2b_fastp_hpc.snakefile)
+To iterate through samples and R1/R2 reads this snakefile was used: [forslund_t2d_2b_fastp_hpc.snakefile](ft2d_2_fastp_qc/forslund_t2d_2b_fastp_hpc.snakefile)
 
 ```Shell 
-cd $WORKING_DIRECTORY/zeller-crc/zcrc_2_fastp_qc
-nohup snakemake -s zeller_crc_2b_fastp_hpc.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 351 --latency-wait 60 & exit
+cd $WORKING_DIRECTORY/forslund-t2d/ft2d_2_fastp_qc
+nohup snakemake -s forslund_t2d_2b_fastp_hpc.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 145 --latency-wait 60 & exit
 ```
 
 Log back into the HPC.
 
 [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) only uses good R1 files, so cleanup files not used
 ```Shell
-cd $WORKING_DIRECTORY/zeller-crc/zcrc_2_fastp_qc
+cd $WORKING_DIRECTORY/forslund-t2d/ft2d_2_fastp_qc
 find -type f -name '*_R2.good.fastq'
 find -type f -name '*_R2.good.fastq' -delete
 
@@ -57,28 +55,61 @@ find -type f -name '*_R1.single.fastq'
 find -type f -name '*_R1.single.fastq' -delete
 ```
 
-Note: with the specific QC parameters used here, the following sequence files failed to generate "good" R1 sequences (as required for SUPER-FOCUS): ERR479093, ERR479094, ERR479095, ERR479096, ERR479146, ERR479148, ERR479176, ERR479322.
-
 &nbsp;
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
 This runs the python script *[zeller-crc_3_superfocus_fxns_hpc.py](zcrc_3_superfocus_fxns/zeller-crc_3_superfocus_fxns_hpc.py)*.
 
-The python script writes and submits a separate SLURM submission file for each sample, with all files copied to [job_files](zcrc_3_superfocus_fxns/job_files)
+The python script writes and submits a separate SLURM submission file for each sample, with all files copied to [job_files](ft2d_3_superfocus_fxns/job_files)
 
 ```Shell
-cd $WORKING_DIRECTORY/zeller-crc/zcrc_3_superfocus_fxns
-sbatch run__zeller-crc_3_superfocus_fxns_hpc.sh
+cd $WORKING_DIRECTORY/forslund-t2d/ft2d_3_superfocus_fxns
+sbatch run__forslund-t2d_3_superfocus_fxns_hpc.sh
 ```
+
+&nbsp;
+
+We encountered a number of failed jobs, so SUPER-FOCUS was rerun with increased memory allocation. The rerun submission files were copied to [job_files_RERUNS](ft2d_3_superfocus_fxns/job_files_RERUNS)
+
+```Shell
+cd $WORKING_DIRECTORY/forslund-t2d/ft2d_3_superfocus_fxns/job_files_RERUNS
+sbatch ./submission_superfocus_ERR275252.sh
+sbatch ./submission_superfocus_ERR260272.sh
+sbatch ./submission_superfocus_ERR260267.sh
+sbatch ./submission_superfocus_ERR260264.sh
+sbatch ./submission_superfocus_ERR260261.sh
+sbatch ./submission_superfocus_ERR260241.sh
+sbatch ./submission_superfocus_ERR260231.sh
+sbatch ./submission_superfocus_ERR260224.sh
+sbatch ./submission_superfocus_ERR260223.sh
+sbatch ./submission_superfocus_ERR260222.sh
+sbatch ./submission_superfocus_ERR260215.sh
+sbatch ./submission_superfocus_ERR260204.sh
+sbatch ./submission_superfocus_ERR260190.sh
+sbatch ./submission_superfocus_ERR260188.sh
+sbatch ./submission_superfocus_ERR260187.sh
+sbatch ./submission_superfocus_ERR260183.sh
+sbatch ./submission_superfocus_ERR260182.sh
+sbatch ./submission_superfocus_ERR260177.sh
+sbatch ./submission_superfocus_ERR260174.sh
+sbatch ./submission_superfocus_ERR260169.sh
+sbatch ./submission_superfocus_ERR260158.sh
+sbatch ./submission_superfocus_ERR260150.sh
+sbatch ./submission_superfocus_ERR260145.sh
+sbatch ./submission_superfocus_ERR260140.sh
+```
+
+&nbsp;
+
 List sub-folders containing SUPER-FOCUS outputs for each sample, and copy to text file
 ```Shell
 ls -d */
 ```
 Then on local machine create corresponding results folders
 ```Shell
-cd $LOCAL_WORKING_DIRECTORY/zeller-crc
-xargs mkdir <zeller-crc-superfocus-folder-list.txt
+cd $LOCAL_WORKING_DIRECTORY/forslund-t2d
+xargs mkdir <forslund-t2d-superfocus-folder-list.txt
 ```
 
 Now using FileZilla FTP, download all *output_all_levels_and_function.xls* results files for each sequence from HPC to Local machine.
