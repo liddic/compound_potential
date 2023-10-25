@@ -17,7 +17,7 @@ sbatch jie-acvd-sra-runs-download-SET2.sh
 sbatch jie-acvd-sra-runs-download-SET3.sh
 sbatch jie-acvd-sra-runs-download-SET4.sh
 ```
-385 sample files were available for public download via NCBI SRA.
+A total of 385 sample files were available for download from NCBI SRA.
 
 &nbsp;
 
