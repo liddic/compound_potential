@@ -59,7 +59,7 @@ find -type f -name '*_R1.single.fastq' -delete
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
-This runs the python script *[zeller-crc_3_superfocus_fxns_hpc.py](zcrc_3_superfocus_fxns/zeller-crc_3_superfocus_fxns_hpc.py)*.
+This runs the python script *[forslund-t2d_3_superfocus_fxns_hpc.py](ft2d_3_superfocus_fxns/forslund-t2d_3_superfocus_fxns_hpc.py)*.
 
 The python script writes and submits a separate SLURM submission file for each sample, with all files copied to [job_files](ft2d_3_superfocus_fxns/job_files)
 
