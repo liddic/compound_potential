@@ -70,7 +70,7 @@ sbatch run__forslund-t2d_3_superfocus_fxns_hpc.sh
 
 &nbsp;
 
-We encountered a number of failed jobs, so SUPER-FOCUS was rerun with increased memory allocation. The rerun submission files were copied to [job_files_RERUNS](ft2d_3_superfocus_fxns/job_files_RERUNS)
+We encountered a number of failed jobs (n = 24), so SUPER-FOCUS was rerun with increased memory allocation. The rerun submission files were copied to [job_files_RERUNS](ft2d_3_superfocus_fxns/job_files_RERUNS)
 
 ```Shell
 cd $WORKING_DIRECTORY/forslund-t2d/ft2d_3_superfocus_fxns/job_files_RERUNS
