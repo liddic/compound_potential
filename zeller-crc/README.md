@@ -8,26 +8,24 @@ Notes:
 
 **Step 1. Download raw fastq files**
 
-Fastq files were downloaded from NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) using shell scripts in 4 batches, e.g., *[jie-acvd-sra-runs-download-SET1.sh](jacvd_1_meta_raw/jie-acvd-sra-runs-download-SET1.sh)*
+Fastq files were downloaded from NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) using the shell script *[zeller-crc-sra-runs-download.sh](zcrc_1_meta_raw/zeller-crc-sra-runs-download.sh)*
 
 ```Shell
-cd $WORKING_DIRECTORY/jie-acvd/jacvd_1_meta_raw
-sbatch jie-acvd-sra-runs-download-SET1.sh
-sbatch jie-acvd-sra-runs-download-SET2.sh
-sbatch jie-acvd-sra-runs-download-SET3.sh
-sbatch jie-acvd-sra-runs-download-SET4.sh
+cd $WORKING_DIRECTORY/zeller-crc/zcrc_1_meta_raw
+sbatch zeller-crc-sra-runs-download.sh
 ```
-385 sample files were available for public download via NCBI SRA.
+We used Zeller et al's French population dataset, ignoring adenoma patients (n = 114). 
+There were either 2 or 4 sequencing runs per subject (total 351 SRA Runs).
 
 &nbsp;
 
 **Step 2. Perform QA/QC**
 
-Run [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for a representative selection of raw sequence files
+[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports were generated for a representative selection of raw sequence files
 
 ```Shell
-cd $WORKING_DIRECTORY/jie-acvd/jacvd_1_meta_raw/fastqc_reports
-sbatch jie_acvd_2a_fastqc_inspect_eg.sh
+cd $WORKING_DIRECTORY/zeller-crc/zcrc_1_meta_raw/fastqc_reports
+sbatch zeller_crc_2a_fastqc_inspect_eg.sh
 ```
 
 Now perform [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
