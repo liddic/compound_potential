@@ -10,12 +10,13 @@ Notes:
 
 Fastq files were downloaded from NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) using the shell script *[zeller-crc-sra-runs-download.sh](zcrc_1_meta_raw/zeller-crc-sra-runs-download.sh)*
 
+We used Zeller et al's French population dataset, ignoring adenoma patients (n = 114). 
+There were either 2 or 4 sequencing runs per subject (total 351 SRA Runs).
+
 ```Shell
 cd $WORKING_DIRECTORY/zeller-crc/zcrc_1_meta_raw
 sbatch zeller-crc-sra-runs-download.sh
 ```
-We used Zeller et al's French population dataset, ignoring adenoma patients (n = 114). 
-There were either 2 or 4 sequencing runs per subject (total 351 SRA Runs).
 
 &nbsp;
 
@@ -28,20 +29,20 @@ cd $WORKING_DIRECTORY/zeller-crc/zcrc_1_meta_raw/fastqc_reports
 sbatch zeller_crc_2a_fastqc_inspect_eg.sh
 ```
 
-Now perform [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
+Next we performed [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
 
-To iterate through samples and R1/R2 reads this snakefile was used: [jie_acvd_2b_fastp_hpc.snakefile](jacvd_2_fastp_qc/jie_acvd_2b_fastp_hpc.snakefile)
+To iterate through samples and R1/R2 reads this snakefile was used: [zeller_crc_2b_fastp_hpc.snakefile](zcrc_2_fastp_qc/zeller_crc_2b_fastp_hpc.snakefile)
 
 ```Shell 
-cd $WORKING_DIRECTORY/jie-acvd/jacvd_2_fastp_qc
-nohup snakemake -s jie_acvd_2b_fastp_hpc.snakefile --cluster 'sbatch --mem=30g --cpus-per-task 1 --time=2-00' -j 385 --latency-wait 60 & exit
+cd $WORKING_DIRECTORY/zeller-crc/zcrc_2_fastp_qc
+nohup snakemake -s zeller_crc_2b_fastp_hpc.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 351 --latency-wait 60 & exit
 ```
 
 Log back into the HPC.
 
 [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) only uses good R1 files, so cleanup files not used
 ```Shell
-cd $WORKING_DIRECTORY/jie-acvd/jacvd_2_fastp_qc
+cd $WORKING_DIRECTORY/zeller-crc/zcrc_2_fastp_qc
 find -type f -name '*_R2.good.fastq'
 find -type f -name '*_R2.good.fastq' -delete
 
