@@ -74,6 +74,7 @@ We encountered a number of failed jobs (n = 24), so SUPER-FOCUS was rerun with i
 
 ```Shell
 cd $WORKING_DIRECTORY/forslund-t2d/ft2d_3_superfocus_fxns/job_files_RERUNS
+find -type f -name 'submission_superfocus_*'
 sbatch ./submission_superfocus_ERR275252.sh
 sbatch ./submission_superfocus_ERR260272.sh
 sbatch ./submission_superfocus_ERR260267.sh
