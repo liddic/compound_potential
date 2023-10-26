@@ -8,14 +8,13 @@ Notes:
 
 **Step 1. Download raw fastq files**
 
-Fastq files were downloaded from NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) using the shell script *[zeller-crc-sra-runs-download.sh](flan_beh_1_meta_raw/zeller-crc-sra-runs-download.sh)*
+Fastq files were downloaded from NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) using the shell script *[flannery-behav_1_meta_raw_download.sh](flan_beh_1_meta_raw/flannery-behav_1_meta_raw_download.sh)*
 
-We used Zeller et al's French population dataset, ignoring adenoma patients (n = 114). 
-There were either 2 or 4 sequencing runs per subject (total 351 SRA Runs).
+A total of 40 SRA sequencing Runs corresponding to n = 40 subjects were initially downloaded.
 
 ```Shell
 cd $WORKING_DIRECTORY/flannery-behav/flan_beh_1_meta_raw
-sbatch zeller-crc-sra-runs-download.sh
+sbatch flannery-behav_1_meta_raw_download.sh
 ```
 
 &nbsp;
@@ -26,16 +25,16 @@ sbatch zeller-crc-sra-runs-download.sh
 
 ```Shell
 cd $WORKING_DIRECTORY/flannery-behav/flan_beh_1_meta_raw/fastqc_reports
-sbatch zeller_crc_2a_fastqc_inspect_eg.sh
+sbatch flannery-behav_2a_fastqc_inspect_eg.sh
 ```
 
 Next we performed [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
 
-To iterate through samples and R1/R2 reads this snakefile was used: [zeller_crc_2b_fastp_hpc.snakefile](flan_beh_2_fastp_qc/zeller_crc_2b_fastp_hpc.snakefile)
+To iterate through samples and R1/R2 reads this snakefile was used: [flannery-behav_2b_fastp_hpc.snakefile](flan_beh_2_fastp_qc/flannery-behav_2b_fastp_hpc.snakefile)
 
 ```Shell 
 cd $WORKING_DIRECTORY/flannery-behav/flan_beh_2_fastp_qc
-nohup snakemake -s zeller_crc_2b_fastp_hpc.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 351 --latency-wait 60 & exit
+nohup snakemake -s flannery-behav_2b_fastp_hpc.snakefile --cluster 'sbatch --mem=30g --cpus-per-task 1 --time=2-00' -j 40 --latency-wait 60 & exit
 ```
 
 Log back into the HPC.
@@ -53,19 +52,17 @@ find -type f -name '*_R1.single.fastq'
 find -type f -name '*_R1.single.fastq' -delete
 ```
 
-Note: with the specific QC parameters used here, the following sequence files failed to generate "good" R1 sequences (as required for SUPER-FOCUS): ERR479093, ERR479094, ERR479095, ERR479096, ERR479146, ERR479148, ERR479176, ERR479322.
-
 &nbsp;
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
-This runs the python script *[zeller-crc_3_superfocus_fxns_hpc.py](flan_beh_3_superfocus_fxns/zeller-crc_3_superfocus_fxns_hpc.py)*.
+This runs the python script *[flannery-behav_3_superfocus_fxns_hpc.py](flan_beh_3_superfocus_fxns/flannery-behav_3_superfocus_fxns_hpc.py)*.
 
 The python script writes and submits a separate SLURM submission file for each sample, with all files copied to [job_files](flan_beh_3_superfocus_fxns/job_files)
 
 ```Shell
 cd $WORKING_DIRECTORY/flannery-behav/flan_beh_3_superfocus_fxns
-sbatch run__zeller-crc_3_superfocus_fxns_hpc.sh
+sbatch run__flannery-behav_3_superfocus_fxns_hpc.sh
 ```
 List sub-folders containing SUPER-FOCUS outputs for each sample, and copy to text file
 ```Shell
@@ -74,7 +71,7 @@ ls -d */
 Then on local machine create corresponding results folders
 ```Shell
 cd $LOCAL_WORKING_DIRECTORY/flannery-behav
-xargs mkdir <zeller-crc-superfocus-folder-list.txt
+xargs mkdir <flannery-behav-superfocus-folder-list.txt
 ```
 
 Now using FileZilla FTP, download all *output_all_levels_and_function.xls* results files for each sequence from HPC to Local machine.
