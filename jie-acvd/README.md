@@ -23,14 +23,14 @@ A total of 385 sample files were available for download from NCBI SRA.
 
 **Step 2. Perform QA/QC**
 
-Run [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for a representative selection of raw sequence files
+[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports were generated for a representative selection of raw sequence files
 
 ```Shell
 cd $WORKING_DIRECTORY/jie-acvd/jacvd_1_meta_raw/fastqc_reports
 sbatch jie_acvd_2a_fastqc_inspect_eg.sh
 ```
 
-Now perform [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
+Next we performed [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
 
 To iterate through samples and R1/R2 reads this snakefile was used: [jie_acvd_2b_fastp_hpc.snakefile](jacvd_2_fastp_qc/jie_acvd_2b_fastp_hpc.snakefile)
 
