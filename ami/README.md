@@ -8,7 +8,7 @@ Notes:
 
 **Step 1. Download raw fastq files**
 
-From initial sample search criteria entered into the AMI data portal, metadata, URLs, and MD5 checksum information for relevant metagenomics samples was exported. A shell script initiated the following Python script (calling on URLs and MD5 checksums) to perform downloading of sequence files *[ami_1_meta_download_hpc.py](ami_1_meta_raw_fastq/ami_1_meta_download_hpc.py)*
+From initial sample search criteria entered into the AMI data portal, metadata, URLs, and MD5 checksum information for relevant metagenomics samples were exported. A shell script initiated the following Python script (calling on URLs and MD5 checksums) to perform downloading of sequence files *[ami_1_meta_download_hpc.py](ami_1_meta_raw_fastq/ami_1_meta_download_hpc.py)*
 
 ```Shell
 cd $WORKING_DIRECTORY/ami_1_meta_raw_fastq
