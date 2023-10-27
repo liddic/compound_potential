@@ -12,7 +12,7 @@ PCaN pilot urban forest ecosystem restoration data are available on reasonable r
 
 Compressed metagenomics .gz files corresponding to 19 samples were downloaded to DeepThought (1 sample was later excluded due to missing pH data).
 
-Files were uncompressed into folders based on sample code identifiers
+Files were uncompressed into folders based on sample code identifiers via the script [1b_uncompress_gzfiles.sh](nz_1_meta_raw_fastq/1b_uncompress_gzfiles.sh)
 
 ```Shell
 cd $WORKING_DIRECTORY/pcan-resto/nz_1_meta_raw_fastq
