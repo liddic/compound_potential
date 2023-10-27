@@ -40,15 +40,15 @@ citation()
 # Computing, Vienna, Austria. URL https://www.R-project.org/.
 
 
-library(readxl); packageVersion("readxl") # '1.4.1'
+library(readxl); packageVersion("readxl") # '1.4.2'
 library(plyr); packageVersion("plyr") # '1.8.8'
-library(dplyr); packageVersion("dplyr") # '1.0.10'
+library(dplyr); packageVersion("dplyr") # '1.1.2'
 library(vegan);packageVersion("vegan") # '2.6.4'
-library(phyloseq); packageVersion("phyloseq") # '1.42.0'
-library(ggplot2); packageVersion("ggplot2") # '3.4.0'
+library(phyloseq); packageVersion("phyloseq") # '1.44.0'
+library(ggplot2); packageVersion("ggplot2") # '3.4.2'
 library(grid); packageVersion("grid") #  '4.2.2'
 library(reshape2); packageVersion("reshape2") # '1.4.4'
-library(tidyr); packageVersion("tidyr") # '1.2.1'
+library(tidyr); packageVersion("tidyr") # '1.3.0'
 library(corrr); packageVersion("corrr") # '0.4.4'
 library(ggforce); packageVersion("ggforce") # '0.4.1'
 library(ggrepel); packageVersion("ggrepel") # '0.9.2'
@@ -67,7 +67,7 @@ library(moments); packageVersion("moments") # ‘0.14.1’
 library(ANCOMBC); packageVersion("ANCOMBC") # ‘2.0.1’
 library(grDevices); packageVersion("grDevices") #  '4.2.2'
 library(ggbiplot); packageVersion("ggbiplot") #  ‘0.55’
-library(viridis); packageVersion("viridis") #  ‘0.6.2’
+library(viridis); packageVersion("viridis") #  ‘0.6.3’
 library(FSA); packageVersion("FSA") # '0.9.3'
 library(rcompanion); packageVersion("rcompanion") # '2.4.18'
 library(fields); packageVersion("fields") # ‘14.1’
