@@ -60,13 +60,13 @@ Note: with the specific QC parameters used here, the following sequence files fa
 
 **Step 3. Perform [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) functional annotation**
 
-This runs the python script *[zeller-crc_3_superfocus_fxns_hpc.py](zcrc_3_superfocus_fxns/zeller-crc_3_superfocus_fxns_hpc.py)*.
+This runs the python script *[3_nz_superfocus_fxns_hpc.py](nz_3_superfocus_fxns/3_nz_superfocus_fxns_hpc.py)*.
 
-The python script writes and submits a separate SLURM submission file for each sample, with all files copied to [job_files](zcrc_3_superfocus_fxns/job_files)
+The python script writes and submits a separate SLURM submission file for each sample, with all files copied to [job_files](nz_3_superfocus_fxns/job_files)
 
 ```Shell
-cd $WORKING_DIRECTORY/pcan-resto/zcrc_3_superfocus_fxns
-sbatch run__zeller-crc_3_superfocus_fxns_hpc.sh
+cd $WORKING_DIRECTORY/pcan-resto/nz_3_superfocus_fxns
+sbatch run__3_nz_superfocus_fxns_hpc.sh
 ```
 List sub-folders containing SUPER-FOCUS outputs for each sample, and copy to text file
 ```Shell
@@ -75,7 +75,7 @@ ls -d */
 Then on local machine create corresponding results folders
 ```Shell
 cd $LOCAL_WORKING_DIRECTORY/pcan-resto
-xargs mkdir <zeller-crc-superfocus-folder-list.txt
+xargs mkdir <PCaN-superfocus-folder-list.txt
 ```
 
 Now using FileZilla FTP, download all *output_all_levels_and_function.xls* results files for each sequence from HPC to Local machine.
