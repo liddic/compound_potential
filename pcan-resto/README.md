@@ -26,24 +26,23 @@ sbatch 1b_uncompress_gzfiles.sh
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports were generated for a representative selection of raw sequence files
 
 ```Shell
-cd $WORKING_DIRECTORY/pcan-resto/zcrc_1_meta_raw/fastqc_reports
-sbatch zeller_crc_2a_fastqc_inspect_eg.sh
+cd $WORKING_DIRECTORY/pcan-resto/nz_1_meta_raw_fastq/fastqc_reports
+sbatch 2a_fastqc_inspect_eg
 ```
 
-Next we performed [Fastp](https://github.com/OpenGene/fastp) quality control / trimming using [Snakemake](https://snakemake.github.io/).
+Next we performed [Fastp](https://github.com/OpenGene/fastp) quality control / trimming.
 
-To iterate through samples and R1/R2 reads this snakefile was used: [zeller_crc_2b_fastp_hpc.snakefile](zcrc_2_fastp_qc/zeller_crc_2b_fastp_hpc.snakefile)
+To iterate through samples and R1/R2 reads this Python script was implemented: [2b_nz_fastp_qc_hpc.py](nz_2_fastp_qc/2b_nz_fastp_qc_hpc.py) with respective job submission scripts copied here [job_index](nz_2_fastp_qc/job_index)
 
 ```Shell 
-cd $WORKING_DIRECTORY/pcan-resto/zcrc_2_fastp_qc
-nohup snakemake -s zeller_crc_2b_fastp_hpc.snakefile --cluster 'sbatch --mem=32g --cpus-per-task 1 --time=2-00' -j 351 --latency-wait 60 & exit
+cd $WORKING_DIRECTORY/pcan-resto/nz_2_fastp_qc
+sbatch run__2b_nz_fastp_qc_hpc.sh
 ```
 
-Log back into the HPC.
-
 [SUPER-FOCUS](https://github.com/metageni/SUPER-FOCUS) only uses good R1 files, so cleanup files not used
+
 ```Shell
-cd $WORKING_DIRECTORY/pcan-resto/zcrc_2_fastp_qc
+cd $WORKING_DIRECTORY/pcan-resto/nz_2_fastp_qc
 find -type f -name '*_R2.good.fastq'
 find -type f -name '*_R2.good.fastq' -delete
 
@@ -53,8 +52,6 @@ find -type f -name '*_R2.single.fastq' -delete
 find -type f -name '*_R1.single.fastq'
 find -type f -name '*_R1.single.fastq' -delete
 ```
-
-Note: with the specific QC parameters used here, the following sequence files failed to generate "good" R1 sequences (as required for SUPER-FOCUS): ERR479093, ERR479094, ERR479095, ERR479096, ERR479146, ERR479148, ERR479176, ERR479322.
 
 &nbsp;
 
