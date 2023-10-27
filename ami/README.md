@@ -74,4 +74,4 @@ xargs mkdir <ami-superfocus-folder-list.txt
 ```
 
 Now using FileZilla FTP, download all *output_all_levels_and_function.xls* results files for each sequence from HPC to Local machine.
-Proceed with data analysis in R
+Proceed with [data analysis in R](../Compound-potential-R-code-final.R)
