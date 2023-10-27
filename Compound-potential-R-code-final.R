@@ -18,15 +18,15 @@
 # Case study datasets are analysed in order:
 #   
 # A) Soil metagenomes:
-# - People, Cities and Nature (PCaN) urban forest ecosystem restoration (Barnes et al 2023: Aotearoa Genomic Data Repository, https://data.agdr.org.nz/; samples described by Mitchell 2022)
-# - Australian Microbiome Initiative (AMI) disturbed vs. natural soils (https://data.bioplatforms.com/organization/australian-microbiome; Accessed in September 2022)
-# - Post-mining ecosystem restoration (Sun and Badgley 2019)
+# - People, Cities and Nature (PCaN) urban forest ecosystem restoration (Barnes et al 2023: Aotearoa Genomic Data Repository, https://data.agdr.org.nz/; samples described by Mitchell (2022), https://researchcommons.waikato.ac.nz/handle/10289/14915
+# - Australian Microbiome Initiative (AMI) disturbed vs. natural soils - using data from AMI, https://data.bioplatforms.com/organization/australian-microbiome (Accessed in September 2022)
+# - Post-mining ecosystem restoration - using data from Sun and Badgley (2019), https://doi.org/10.1016/j.soilbio.2019.05.004
 # 
 # B) Human gut metagenomes in health & disease:
-# - Atherosclerotic cardiovascular disease (ACVD) (Jie et al 2017)
-# - Colorectal cancer (Zeller et al 2014)
-# - Type 2 diabetes (T2D) (Forslund et al 2015)
-# - Childhood anxious-depressive behaviors by (Flannery et al 2020)
+# - Atherosclerotic cardiovascular disease (ACVD) - using data from Jie et al (2017), https://doi.org/10.1038/s41467-017-00900-1
+# - Colorectal cancer - using data from Zeller et al (2014), https://doi.org/10.15252/msb.20145645
+# - Type 2 diabetes (T2D) - using data from Forslund et al (2015), https://doi.org/10.1038/nature15766
+# - Childhood anxious-depressive behaviors - using data from Flannery et al (2020), https://doi.org/10.1128/mBio.02780-19
 #
 #########################
 
