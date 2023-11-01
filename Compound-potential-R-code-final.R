@@ -5,9 +5,8 @@
 # R code for the article:
 # Bioenergetic mapping of ‘healthy microbiomes’ via compound processing potential imprinted in gut and soil metagenomes
 #
-# by Craig Liddicoat, Robert A. Edwards, Michael Roach, Jake M. Robinson, Andrew D. Barnes, Joel Brame, Anna Heintz-Buschart, 
-# Timothy R. Cavagnaro, Elizabeth A. Dinsdale, Michael P. Doane, Nico Eisenhauer, Grace Mitchell, Bibishan Rai, Sunita Ramesh, 
-# Kiri J. Wallace, Martin F. Breed 
+# by Craig Liddicoat, Robert A. Edwards, Michael Roach, Jake M. Robinson, Kiri Joy Wallace, Andrew D. Barnes, Joel Brame, Anna Heintz-Buschart, 
+# Timothy R. Cavagnaro, Elizabeth A. Dinsdale, Michael P. Doane, Nico Eisenhauer, Grace Mitchell, Bibishan Rai, Sunita Ramesh, Martin F. Breed 
 #
 #########################
 # 
