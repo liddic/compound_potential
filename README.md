@@ -7,7 +7,9 @@ Compound processing potential assessments derived from metagenomes of human gut 
 
 by Craig Liddicoat, Robert A. Edwards, Michael Roach, Jake M. Robinson, Kiri Joy Wallace, Andrew D. Barnes, Joel Brame, Anna Heintz-Buschart, Timothy R. Cavagnaro, Elizabeth A. Dinsdale, Michael P. Doane, Nico Eisenhauer, Grace Mitchell, Bibishan Rai, Sunita Ramesh, Martin F. Breed
 
-DOI: [https://doi.org/10.1101/2023.11.05.565728](https://doi.org/10.1101/2023.11.05.565728) [bioRxiv Preprint]
+Published in *Science of the Total Environment*, DOI: [https://doi.org/10.1016/j.scitotenv.2024.173543](https://doi.org/10.1016/j.scitotenv.2024.173543)
+
+(Preprint server: [BIORXIV/2023/565728](https://doi.org/10.1101/2023.11.05.565728))
 
 **About this repository:** This repository documents code used in the above article, and is not intended for ongoing code development. Sub-folders contain separate README workflow documents and scripts relevant to each of 7 case study datasets (described below).
 
