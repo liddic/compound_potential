@@ -1970,7 +1970,9 @@ modelSEED_rxn_result_dir <- "~/WORKSPACE/PROJ/PCaN-NZ/nz-city-resto/modelling/R/
 
 # read first output
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 print( length(temp) )
 print( names(temp) )
 print( paste0( class(temp[[1]])," ",names(temp)," of length ", length(temp[[1]])," named ",paste0(names(temp[[1]]), collapse = " & ") ))
@@ -1987,11 +1989,15 @@ dim(df.tax) # 36390     4
 num_results_files <- dim(df.tax)[1]
 
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 df.out <- temp[[1]][["fxns"]]
 
 for (i in 2: num_results_files ) {
-  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  #temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
   df.temp <- temp[[1]][["fxns"]]
   df.out <- rbind(df.out,df.temp)
   print(paste0("added df ",i," of ",num_results_files ))
@@ -6755,7 +6761,9 @@ modelSEED_rxn_result_dir <- "~/WORKSPACE/PROJ/PCaN-NZ/nz-city-resto/modelling/R/
 
 # read first output
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 print( length(temp) )
 print( names(temp) )
 print( paste0( class(temp[[1]])," ",names(temp)," of length ", length(temp[[1]])," named ",paste0(names(temp[[1]]), collapse = " & ") ))
@@ -6772,11 +6780,15 @@ dim(df.tax) # 37335     4
 num_results_files <- dim(df.tax)[1]
 
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 df.out <- temp[[1]][["fxns"]]
 
 for (i in 2: num_results_files ) {
-  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  #temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
   df.temp <- temp[[1]][["fxns"]]
   df.out <- rbind(df.out,df.temp)
   print(paste0("added df ",i," of ",num_results_files ))
@@ -10562,7 +10574,9 @@ modelSEED_rxn_result_dir <- "~/WORKSPACE/PROJ/PCaN-NZ/nz-city-resto/modelling/R/
 
 # read first output
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 print( length(temp) )
 print( names(temp) )
 print( paste0( class(temp[[1]])," ",names(temp)," of length ", length(temp[[1]])," named ",paste0(names(temp[[1]]), collapse = " & ") ))
@@ -10579,11 +10593,15 @@ dim(df.tax) # 30125     4
 num_results_files <- dim(df.tax)[1]
 
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 df.out <- temp[[1]][["fxns"]]
 
 for (i in 2: num_results_files ) {
-  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  #temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
   df.temp <- temp[[1]][["fxns"]]
   df.out <- rbind(df.out,df.temp)
   print(paste0("added df ",i," of ",num_results_files ))
@@ -15337,7 +15355,9 @@ modelSEED_rxn_result_dir <- "~/WORKSPACE/PROJ/PCaN-NZ/nz-city-resto/modelling/R/
 
 # read first output
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 print( length(temp) )
 print( names(temp) )
 print( paste0( class(temp[[1]])," ",names(temp)," of length ", length(temp[[1]])," named ",paste0(names(temp[[1]]), collapse = " & ") ))
@@ -15354,11 +15374,15 @@ dim(df.tax) # 21128    4
 num_results_files <- dim(df.tax)[1]
 
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 df.out <- temp[[1]][["fxns"]]
 
 for (i in 2: num_results_files ) {
-  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  #temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
   df.temp <- temp[[1]][["fxns"]]
   df.out <- rbind(df.out,df.temp)
   print(paste0("added df ",i," of ",num_results_files ))
@@ -20647,7 +20671,9 @@ modelSEED_rxn_result_dir <- "~/WORKSPACE/PROJ/PCaN-NZ/nz-city-resto/modelling/R/
 
 # read first output
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 print( length(temp) )
 print( names(temp) )
 print( paste0( class(temp[[1]])," ",names(temp)," of length ", length(temp[[1]])," named ",paste0(names(temp[[1]]), collapse = " & ") ))
@@ -20664,11 +20690,15 @@ dim(df.tax) # 12896     4
 num_results_files <- dim(df.tax)[1]
 
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 df.out <- temp[[1]][["fxns"]]
 
 for (i in 2: num_results_files ) {
-  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  #temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
   df.temp <- temp[[1]][["fxns"]]
   df.out <- rbind(df.out,df.temp)
   print(paste0("added df ",i," of ",num_results_files ))
@@ -25426,7 +25456,9 @@ modelSEED_rxn_result_dir <- "~/WORKSPACE/PROJ/PCaN-NZ/nz-city-resto/modelling/R/
 
 # read first output
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 print( length(temp) )
 print( names(temp) )
 print( paste0( class(temp[[1]])," ",names(temp)," of length ", length(temp[[1]])," named ",paste0(names(temp[[1]]), collapse = " & ") ))
@@ -25442,11 +25474,15 @@ dim(df.tax) # 19099     4
 num_results_files <- dim(df.tax)[1]
 
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 df.out <- temp[[1]][["fxns"]]
 
 for (i in 2: num_results_files ) {
-  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  #temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
   df.temp <- temp[[1]][["fxns"]]
   df.out <- rbind(df.out,df.temp)
   print(paste0("added df ",i," of ",num_results_files ))
@@ -31139,7 +31175,9 @@ modelSEED_rxn_result_dir <- "~/WORKSPACE/PROJ/PCaN-NZ/nz-city-resto/modelling/R/
 
 # read first output
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 print( length(temp) )
 print( names(temp) )
 print( paste0( class(temp[[1]])," ",names(temp)," of length ", length(temp[[1]])," named ",paste0(names(temp[[1]]), collapse = " & ") ))
@@ -31156,11 +31194,15 @@ dim(df.tax) # 20787     4
 num_results_files <- dim(df.tax)[1]
 
 i<-1
-temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+#temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
 df.out <- temp[[1]][["fxns"]]
 
 for (i in 2: num_results_files ) {
-  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  #temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-fxn_",i,".rds"))
+  fxn.superfocus.rowlabel <- row.names(df.tax)[i]
+  temp <- readRDS(paste0(modelSEED_rxn_result_dir,"/fxn-list-",fxn.superfocus.rowlabel,".rds"))
   df.temp <- temp[[1]][["fxns"]]
   df.out <- rbind(df.out,df.temp)
   print(paste0("added df ",i," of ",num_results_files ))
